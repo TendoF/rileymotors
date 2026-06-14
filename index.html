@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boss Calaz | Premium Cars — Zvishavane, Zimbabwe</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream: #f0f6ff;
+  --cream2: #e3eeff;
+  --cream3: #d4e5ff;
+  --ink: #0a1a2e;
+  --ink2: #142540;
+  --mid: #3a5a80;
+  --muted: #7a9bbf;
+  --blue: #1565c0;
+  --blue2: #1e88e5;
+  --blue3: #42a5f5;
+  --white: #ffffff;
+  --border: rgba(21,101,192,0.10);
+  --border2: rgba(21,101,192,0.18);
+  --accent: #0288d1;
+  --accent2: #29b6f6;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;overflow-x:hidden;}
+body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+img{display:block;max-width:100%;}
+a{text-decoration:none;color:inherit;}
+::-webkit-scrollbar{width:3px;}
+::-webkit-scrollbar-track{background:var(--cream);}
+::-webkit-scrollbar-thumb{background:var(--blue2);}
+
+/* ── SCROLL REVEAL ── */
+.reveal{opacity:0;transform:translateY(36px);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1);}
+.reveal.visible{opacity:1;transform:none;}
+.reveal-left{opacity:0;transform:translateX(-40px);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1);}
+.reveal-left.visible{opacity:1;transform:none;}
+.reveal-right{opacity:0;transform:translateX(40px);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1);}
+.reveal-right.visible{opacity:1;transform:none;}
+.delay-1{transition-delay:.1s!important;}
+.delay-2{transition-delay:.2s!important;}
+.delay-3{transition-delay:.3s!important;}
+.delay-4{transition-delay:.4s!important;}
+.delay-5{transition-delay:.5s!important;}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:900;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 60px;background:rgba(255,255,255,0.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);transition:box-shadow .3s;}
+nav.scrolled{box-shadow:0 2px 24px rgba(21,101,192,.08);}
+.nav-logo{display:flex;align-items:center;gap:10px;}
+.logo-circle{width:26px;height:26px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.logo-circle svg{width:13px;height:13px;fill:var(--accent2);}
+.logo-text .l1{font-family:'Cormorant Garamond',serif;font-size:.88rem;font-weight:700;color:var(--ink);letter-spacing:.02em;line-height:1.1;}
+.logo-text .l2{font-size:.5rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);}
+.nav-links{display:flex;align-items:center;gap:2rem;list-style:none;}
+.nav-links a{font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--mid);transition:color .2s;}
+.nav-links a:hover{color:var(--ink);}
+.nav-btn{background:var(--blue);color:var(--white);padding:.38rem .95rem;font-family:'DM Sans',sans-serif;font-size:.62rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;border:none;cursor:pointer;transition:all .2s;}
+.nav-btn:hover{background:var(--blue2);}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;}
+.hamburger span{display:block;width:22px;height:1.5px;background:var(--ink);transition:.3s;}
+.hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
+.hamburger.open span:nth-child(2){opacity:0;}
+.hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
+.mob-menu{display:none;position:fixed;top:68px;left:0;right:0;background:var(--white);z-index:850;border-bottom:1px solid var(--border);padding:1.5rem 1.5rem 2rem;flex-direction:column;gap:.5rem;}
+.mob-menu.open{display:flex;}
+.mob-menu a{display:block;font-size:.9rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--mid);padding:.9rem 0;border-bottom:1px solid var(--border);transition:color .2s;}
+.mob-menu a:hover{color:var(--ink);}
+.mob-menu a:last-child{border-bottom:none;}
+
+/* ── HERO ── */
+.hero{margin-top:68px;position:relative;width:100%;aspect-ratio:4/3;max-height:75vh;min-height:360px;overflow:hidden;background:#000d1a;display:flex;align-items:flex-end;}
+.hero-bg{position:absolute;inset:0;overflow:hidden;}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,26,46,0.0) 0%,rgba(10,26,46,0.0) 30%,rgba(10,26,46,0.60) 58%,rgba(10,26,46,0.94) 100%);}
+.hero-text{position:relative;z-index:2;width:100%;padding:0 24px 32px;display:flex;flex-direction:column;align-items:center;text-align:center;}
+.hero-badge{display:inline-flex;background:#fff;border-radius:6px;padding:8px 14px 8px 10px;margin-bottom:12px;align-items:center;gap:10px;}
+.hero-badge-icon{width:32px;height:32px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.hero-badge-icon svg{width:14px;height:14px;fill:none;stroke:var(--accent2);stroke-width:2;stroke-linecap:round;}
+.hero-badge-text .hb1{font-size:.6rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);line-height:1.3;}
+.hero-badge-text .hb2{font-size:.5rem;color:var(--muted);letter-spacing:.05em;}
+.hero-model{font-family:'Barlow Condensed','Arial Black',sans-serif;font-size:clamp(2.2rem,10vw,3.8rem);font-weight:800;color:#fff;letter-spacing:-.01em;line-height:1.08;margin-bottom:1.2rem;text-shadow:0 2px 16px rgba(0,0,0,0.3);max-width:520px;}
+.hero-btns{display:flex;flex-direction:column;align-items:center;gap:.65rem;width:100%;max-width:320px;}
+.hbtn{width:100%;padding:.88rem 2rem;font-family:'DM Sans',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border-radius:30px;cursor:pointer;transition:all .22s;display:block;text-align:center;}
+.hbtn-primary{background:var(--blue);color:#fff;border:2px solid var(--blue);}
+.hbtn-primary:hover{background:var(--blue2);border-color:var(--blue2);}
+.hbtn-secondary{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.75);}
+.hbtn-secondary:hover{background:rgba(255,255,255,.12);border-color:#fff;}
+.hero-dots{display:flex;gap:.5rem;align-items:center;justify-content:center;padding:18px 0;background:#fff;}
+.hero-dot{width:10px;height:10px;border-radius:50%;background:rgba(21,101,192,0.20);border:none;cursor:pointer;transition:background .25s,transform .25s;}
+.hero-dot.active{background:var(--blue);transform:scale(1.2);}
+
+/* ── WHY STRIP ── */
+.why-strip{background:var(--cream);border-top:1px solid var(--border2);border-bottom:1px solid var(--border2);}
+.why-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);}
+.why-item{display:flex;align-items:flex-start;gap:1rem;padding:2rem 2.2rem;border-right:1px solid var(--border);transition:background .2s;}
+.why-item:last-child{border-right:none;}
+.why-item:hover{background:var(--cream2);}
+.why-num{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:700;color:var(--blue2);line-height:1;flex-shrink:0;}
+.why-t{font-size:.8rem;font-weight:600;color:var(--ink);margin-bottom:.2rem;}
+.why-s{font-size:.72rem;color:var(--muted);line-height:1.5;}
+
+/* ── SHARED SECTION ── */
+.section{padding:100px 60px;}
+.ct{max-width:1280px;margin:0 auto;}
+.sec-tag{display:inline-flex;align-items:center;gap:10px;font-size:.6rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--blue2);margin-bottom:.8rem;}
+.sec-tag::before{content:'';width:20px;height:1px;background:var(--blue2);}
+.sec-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4vw,3.6rem);font-weight:700;color:var(--ink);line-height:1.1;margin-bottom:.8rem;}
+.sec-h2 em{color:var(--blue2);font-style:italic;}
+.sec-rule{width:36px;height:1px;background:var(--blue2);margin:.8rem 0 1.2rem;}
+.sec-p{font-size:.9rem;font-weight:300;color:var(--mid);line-height:1.9;max-width:480px;}
+.btn-ink{background:var(--blue);color:var(--white);border:none;padding:.9rem 2rem;font-family:'DM Sans',sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:background .2s;}
+.btn-ink:hover{background:var(--blue2);}
+.btn-line{background:transparent;color:var(--ink);border:1px solid var(--border2);padding:.9rem 2rem;font-family:'DM Sans',sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:all .2s;}
+.btn-line:hover{border-color:var(--blue);}
+
+/* ── FILTER ── */
+.filter-row{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:2.5rem;}
+.pill{padding:.5rem 1.4rem;background:transparent;color:var(--mid);border:1px solid var(--border2);font-family:'DM Sans',sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:all .2s;}
+.pill:hover,.pill.active{background:var(--blue);color:var(--white);border-color:var(--blue);}
+
+/* ── CARS GRID ── */
+.cars-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.car-card{background:var(--white);border-radius:16px;box-shadow:0 2px 12px rgba(21,101,192,0.08);cursor:pointer;position:relative;transition:box-shadow .3s,transform .3s;overflow:hidden;}
+.car-card:hover{box-shadow:0 12px 40px rgba(21,101,192,.16);transform:translateY(-4px);}
+.car-img{position:relative;overflow:hidden;aspect-ratio:4/3;background:var(--cream2);}
+.car-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;}
+.car-card:hover .car-img img{transform:scale(1.05);}
+.fav-btn{position:absolute;top:12px;right:12px;width:36px;height:36px;background:var(--white);border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,0.15);transition:all .2s;z-index:2;}
+.fav-btn svg{width:16px;height:16px;fill:none;stroke:var(--mid);stroke-width:2;}
+.fav-btn:hover svg,.fav-btn.faved svg{fill:var(--blue);stroke:var(--blue);}
+.car-badge-el{position:absolute;top:12px;left:12px;font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;z-index:2;}
+.car-badge-el.new{background:var(--blue2);color:var(--white);}
+.car-badge-el.sale{background:var(--accent);color:var(--white);}
+.car-badge-el.import{background:var(--ink);color:var(--white);}
+.car-body{padding:1.1rem 1.2rem 1.3rem;}
+.car-name{font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:.7rem;line-height:1.25;}
+.car-name strong{font-weight:800;}
+.car-specs{display:flex;gap:.45rem;flex-wrap:wrap;margin-bottom:.85rem;}
+.spec{display:inline-flex;align-items:center;gap:.28rem;font-size:.72rem;font-weight:500;color:var(--ink2);background:var(--cream);border-radius:999px;padding:.3rem .75rem;}
+.spec svg{width:12px;height:12px;fill:none;stroke:var(--mid);stroke-width:2;stroke-linecap:round;}
+.car-footer{display:flex;flex-direction:column;align-items:flex-start;padding-top:.85rem;border-top:1px solid var(--border);gap:.18rem;}
+.car-price{font-family:'DM Sans',sans-serif;font-size:1.6rem;font-weight:800;color:var(--blue);line-height:1;}
+.car-price sup{font-size:.75rem;vertical-align:super;font-weight:700;}
+.car-price-original{font-size:.82rem;font-weight:500;color:var(--muted);text-decoration:line-through;}
+.car-finance{font-size:.75rem;color:var(--mid);margin-top:.1rem;}
+.car-finance span{font-weight:600;color:var(--ink);text-decoration:underline;}
+.car-certified{display:inline-flex;align-items:center;gap:.4rem;font-size:.72rem;font-weight:600;color:var(--ink2);margin-top:.5rem;}
+.car-certified::before{content:'';width:10px;height:10px;border-radius:50%;background:var(--blue3);flex-shrink:0;}
+
+/* ── FEATURED ── */
+.featured-section{background:var(--cream);padding:100px 60px;}
+.featured-grid{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
+.feat-img-block{position:relative;}
+.feat-main-img{aspect-ratio:3/2;overflow:hidden;}
+.feat-main-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;}
+.feat-main-img:hover img{transform:scale(1.04);}
+.feat-thumb-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px;}
+.feat-thumb{aspect-ratio:16/9;overflow:hidden;}
+.feat-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .4s;}
+.feat-thumb:hover img{transform:scale(1.06);}
+.feat-tag{display:inline-flex;align-items:center;gap:8px;font-size:.6rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--blue2);border:1px solid rgba(30,136,229,.3);padding:.4rem .9rem;margin-bottom:1.2rem;}
+.feat-name{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:700;color:var(--ink);line-height:1.1;margin-bottom:.6rem;}
+.feat-price{font-family:'Cormorant Garamond',serif;font-size:2.6rem;font-weight:700;color:var(--ink);margin:1rem 0;letter-spacing:-.01em;}
+.feat-price span{font-size:.9rem;font-weight:300;color:var(--muted);font-family:'DM Sans',sans-serif;margin-left:.3rem;}
+.feat-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.3rem 2rem;margin:1.4rem 0 2rem;}
+.feat-list li{display:flex;align-items:center;gap:.6rem;font-size:.82rem;color:var(--mid);padding:.45rem 0;border-bottom:1px solid var(--border);}
+.feat-list li svg{width:12px;height:12px;fill:none;stroke:var(--blue2);stroke-width:2;stroke-linecap:round;flex-shrink:0;}
+.feat-btns{display:flex;gap:.9rem;}
+
+/* ── ABOUT ── */
+.about-layout{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center;}
+.about-img-wrap{position:relative;}
+.about-img-main{aspect-ratio:3/4;overflow:hidden;}
+.about-img-main img{width:100%;height:100%;object-fit:cover;}
+.about-num-card{position:absolute;bottom:-16px;right:-16px;background:var(--blue);color:var(--white);padding:1.8rem 2rem;min-width:150px;}
+.anc-n{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:700;line-height:1;color:var(--accent2);}
+.anc-l{font-size:.62rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:.35rem;}
+.af-list{display:flex;flex-direction:column;margin:1.5rem 0;}
+.af{display:flex;align-items:center;gap:.9rem;font-size:.86rem;color:var(--mid);padding:.8rem 0;border-bottom:1px solid var(--border);}
+.af svg{width:14px;height:14px;fill:none;stroke:var(--blue2);stroke-width:2;flex-shrink:0;stroke-linecap:round;}
+.about-strip{background:var(--cream);padding:1.4rem;margin-top:1.8rem;display:flex;flex-direction:column;gap:.8rem;}
+.act{display:flex;align-items:center;gap:.8rem;font-size:.84rem;color:var(--mid);}
+.act-ico{width:34px;height:34px;flex-shrink:0;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;}
+.act-ico svg{width:14px;height:14px;fill:none;stroke:var(--accent2);stroke-width:2;stroke-linecap:round;}
+.act strong{display:block;font-weight:600;font-size:.82rem;color:var(--ink);}
+.act span{font-size:.74rem;color:var(--muted);}
+
+/* ── OUR COMPANY ── */
+.our-company-section{background:var(--white);padding:64px 60px;}
+.our-company-title{text-align:center;font-family:'DM Sans',sans-serif;font-size:clamp(.82rem,2vw,.95rem);font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--ink);margin-bottom:36px;}
+.company-cards-grid{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.company-card{background:var(--white);border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:box-shadow .3s,transform .3s;cursor:pointer;}
+.company-card:hover{box-shadow:0 8px 32px rgba(21,101,192,.12);transform:translateY(-3px);}
+.company-card-img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;transition:transform .6s ease;}
+.company-card:hover .company-card-img{transform:scale(1.04);}
+.company-card-body{padding:1.2rem 1.3rem 1.5rem;}
+.company-card-tag{font-family:'DM Sans',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--ink);margin-bottom:.5rem;}
+.company-card-text{font-size:.84rem;color:var(--mid);line-height:1.7;margin-bottom:.9rem;}
+.company-card-link{font-family:'DM Sans',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue2);display:inline-flex;align-items:center;gap:.35rem;transition:gap .2s;}
+.company-card-link:hover{gap:.6rem;}
+.company-card-link::after{content:'›';font-size:1.1rem;line-height:1;}
+
+/* ════════════════════════════════
+   NEW SECTION 1 — STATS BANNER
+   ════════════════════════════════ */
+.stats-section{
+  background:var(--blue);
+  padding:80px 60px;
+  position:relative;
+  overflow:hidden;
+}
+.stats-section::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at 70% 50%,rgba(66,165,245,0.25) 0%,transparent 70%);
+  pointer-events:none;
+}
+.stats-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:0;}
+.stat-item{
+  text-align:center;
+  padding:2.5rem 2rem;
+  border-right:1px solid rgba(255,255,255,.12);
+  position:relative;
+}
+.stat-item:last-child{border-right:none;}
+.stat-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(3rem,5vw,4.5rem);
+  font-weight:700;
+  color:var(--white);
+  line-height:1;
+  display:block;
+}
+.stat-num span{color:var(--accent2);}
+.stat-label{
+  font-size:.68rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+  color:rgba(255,255,255,.5);
+  margin-top:.6rem;display:block;
+}
+.stat-desc{
+  font-size:.8rem;color:rgba(255,255,255,.35);
+  margin-top:.35rem;line-height:1.5;
+}
+
+/* ════════════════════════════════
+   NEW SECTION 2 — HOW IT WORKS
+   ════════════════════════════════ */
+.process-section{background:var(--white);padding:110px 60px;}
+.process-inner{max-width:1280px;margin:0 auto;}
+.process-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:64px;flex-wrap:wrap;gap:2rem;}
+.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;}
+.process-steps::before{
+  content:'';
+  position:absolute;
+  top:44px;left:calc(12.5%);right:calc(12.5%);
+  height:1px;background:var(--border2);
+  z-index:0;
+}
+.process-step{
+  display:flex;flex-direction:column;align-items:center;
+  text-align:center;padding:0 1.5rem;position:relative;z-index:1;
+}
+.step-circle{
+  width:88px;height:88px;border-radius:50%;
+  border:2px solid var(--border2);
+  background:var(--white);
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:1.6rem;
+  position:relative;
+  transition:border-color .3s,background .3s,transform .3s;
+  cursor:default;
+}
+.process-step:hover .step-circle{
+  border-color:var(--blue2);
+  background:var(--blue);
+  transform:translateY(-4px);
+}
+.step-circle svg{width:28px;height:28px;fill:none;stroke:var(--blue2);stroke-width:1.5;stroke-linecap:round;transition:stroke .3s;}
+.process-step:hover .step-circle svg{stroke:#fff;}
+.step-num{
+  position:absolute;top:-8px;right:-8px;
+  width:24px;height:24px;border-radius:50%;
+  background:var(--blue);color:#fff;
+  font-size:.6rem;font-weight:800;
+  display:flex;align-items:center;justify-content:center;
+}
+.step-title{font-size:.88rem;font-weight:700;color:var(--ink);margin-bottom:.5rem;}
+.step-text{font-size:.78rem;color:var(--muted);line-height:1.6;}
+
+/* ════════════════════════════════
+   NEW SECTION 3 — SERVICES GRID
+   ════════════════════════════════ */
+.services-section{background:var(--cream);padding:110px 60px;}
+.services-inner{max-width:1280px;margin:0 auto;}
+.services-header{text-align:center;margin-bottom:60px;}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.service-card{
+  background:var(--white);
+  border:1px solid var(--border);
+  padding:2.4rem 2rem;
+  position:relative;
+  overflow:hidden;
+  transition:transform .3s,box-shadow .3s,border-color .3s;
+  cursor:default;
+}
+.service-card::after{
+  content:'';
+  position:absolute;bottom:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--blue),var(--blue3));
+  transform:scaleX(0);transform-origin:left;
+  transition:transform .4s cubic-bezier(.22,1,.36,1);
+}
+.service-card:hover{transform:translateY(-6px);box-shadow:0 16px 48px rgba(21,101,192,.13);border-color:rgba(30,136,229,.3);}
+.service-card:hover::after{transform:scaleX(1);}
+.service-icon{
+  width:52px;height:52px;border-radius:12px;
+  background:var(--cream2);
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:1.4rem;
+  transition:background .3s;
+}
+.service-card:hover .service-icon{background:var(--blue);}
+.service-icon svg{width:22px;height:22px;fill:none;stroke:var(--blue2);stroke-width:1.8;stroke-linecap:round;transition:stroke .3s;}
+.service-card:hover .service-icon svg{stroke:#fff;}
+.service-title{font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:.65rem;}
+.service-text{font-size:.84rem;color:var(--mid);line-height:1.75;}
+.service-cta{
+  display:inline-flex;align-items:center;gap:.4rem;
+  font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--blue2);margin-top:1.2rem;cursor:pointer;
+  transition:gap .2s;
+}
+.service-cta:hover{gap:.7rem;}
+.service-cta svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;}
+
+/* ════════════════════════════════
+   NEW SECTION 4 — TESTIMONIALS
+   ════════════════════════════════ */
+.testi-section{
+  background:var(--ink);
+  padding:110px 60px;
+  position:relative;overflow:hidden;
+}
+.testi-section::before{
+  content:'';position:absolute;
+  top:-120px;right:-120px;
+  width:400px;height:400px;border-radius:50%;
+  background:radial-gradient(circle,rgba(30,136,229,.18) 0%,transparent 70%);
+  pointer-events:none;
+}
+.testi-inner{max-width:1280px;margin:0 auto;}
+.testi-header{text-align:center;margin-bottom:60px;}
+.testi-header .sec-tag{color:var(--blue3);}
+.testi-header .sec-tag::before{background:var(--blue3);}
+.testi-header .sec-h2{color:var(--white);}
+.testi-header .sec-h2 em{color:var(--blue3);}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.testi-card{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+  padding:2.2rem;
+  position:relative;
+  transition:background .3s,border-color .3s,transform .3s;
+}
+.testi-card:hover{background:rgba(30,136,229,.10);border-color:rgba(30,136,229,.3);transform:translateY(-4px);}
+.testi-quote-icon{
+  width:36px;height:36px;
+  background:rgba(30,136,229,.2);border-radius:8px;
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:1.4rem;
+}
+.testi-quote-icon svg{width:16px;height:16px;fill:var(--blue3);}
+.testi-text{font-size:.88rem;color:rgba(255,255,255,.65);line-height:1.85;margin-bottom:1.6rem;font-style:italic;}
+.testi-author{display:flex;align-items:center;gap:.85rem;}
+.testi-avatar{
+  width:40px;height:40px;border-radius:50%;
+  background:linear-gradient(135deg,var(--blue),var(--blue3));
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+  font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:700;color:#fff;
+}
+.testi-name{font-size:.82rem;font-weight:700;color:var(--white);}
+.testi-loc{font-size:.7rem;color:rgba(255,255,255,.35);margin-top:.1rem;}
+.testi-stars{display:flex;gap:2px;margin-bottom:1rem;}
+.testi-stars svg{width:13px;height:13px;fill:var(--blue3);}
+
+/* ════════════════════════════════
+   FAQ — REDESIGNED
+   ════════════════════════════════ */
+.faq-section{background:var(--cream);padding:110px 60px;}
+.faq-inner{max-width:900px;margin:0 auto;}
+.faq-header{text-align:center;margin-bottom:60px;}
+.faq-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;color:var(--ink);margin-top:.4rem;line-height:1.1;}
+.faq-header .sec-tag{justify-content:center;}
+.faq-grid{display:flex;flex-direction:column;gap:.75rem;}
+.faq-item{
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:12px;
+  overflow:hidden;
+  transition:border-color .25s,box-shadow .25s;
+}
+.faq-item:hover,.faq-item.open{border-color:rgba(30,136,229,.35);box-shadow:0 4px 20px rgba(21,101,192,.08);}
+.faq-q{
+  width:100%;background:none;border:none;text-align:left;cursor:pointer;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1.35rem 1.6rem;
+  font-family:'DM Sans',sans-serif;font-size:clamp(.88rem,1.6vw,.96rem);
+  font-weight:600;color:var(--ink);gap:1.5rem;transition:color .2s;
+}
+.faq-q:hover{color:var(--blue2);}
+.faq-item.open .faq-q{color:var(--blue);}
+.faq-icon{
+  flex-shrink:0;width:28px;height:28px;
+  border-radius:50%;
+  background:var(--cream2);
+  display:flex;align-items:center;justify-content:center;
+  transition:background .25s,transform .35s;
+}
+.faq-icon svg{width:11px;height:11px;fill:none;stroke:var(--mid);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;transition:stroke .25s;}
+.faq-item.open .faq-icon{background:var(--blue);transform:rotate(45deg);}
+.faq-item.open .faq-icon svg{stroke:#fff;}
+.faq-a{
+  max-height:0;overflow:hidden;
+  transition:max-height .42s ease,padding .3s;
+  font-size:.88rem;color:var(--mid);line-height:1.85;
+  padding:0 1.6rem;
+}
+.faq-item.open .faq-a{max-height:300px;padding:0 1.6rem 1.5rem;}
+
+/* ════════════════════════════════
+   CONTACT — REDESIGNED
+   ════════════════════════════════ */
+.contact-section{background:var(--ink);padding:110px 60px;position:relative;overflow:hidden;}
+.contact-section::before{
+  content:'';position:absolute;bottom:-100px;left:-100px;
+  width:500px;height:500px;border-radius:50%;
+  background:radial-gradient(circle,rgba(30,136,229,.12) 0%,transparent 70%);
+  pointer-events:none;
+}
+.contact-grid{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1.1fr;gap:6rem;align-items:start;position:relative;z-index:1;}
+.contact-left .sec-tag{color:var(--blue3);}
+.contact-left .sec-tag::before{background:var(--blue3);}
+.contact-left .sec-h2{color:var(--white);}
+.contact-left .sec-h2 em{color:var(--blue3);}
+.contact-left .sec-rule{background:var(--blue3);}
+.contact-left .sec-p{color:rgba(255,255,255,.5);max-width:400px;}
+.cinfo-list{display:flex;flex-direction:column;gap:1rem;margin-top:2.5rem;}
+.cinfo-row{
+  display:flex;align-items:center;gap:1.2rem;
+  padding:1.2rem 1.4rem;
+  border:1px solid rgba(255,255,255,.07);
+  background:rgba(255,255,255,.03);
+  transition:border-color .25s,background .25s;
+}
+.cinfo-row:hover{border-color:rgba(30,136,229,.4);background:rgba(30,136,229,.07);}
+.cinfo-ico{width:42px;height:42px;flex-shrink:0;background:var(--blue);border-radius:10px;display:flex;align-items:center;justify-content:center;}
+.cinfo-ico svg{width:17px;height:17px;fill:none;stroke:var(--accent2);stroke-width:1.8;stroke-linecap:round;}
+.cinfo-lbl{font-size:.58rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--blue3);margin-bottom:.25rem;}
+.cinfo-val{font-size:.88rem;color:rgba(255,255,255,.8);line-height:1.5;}
+.cinfo-val a{color:rgba(255,255,255,.8);transition:color .2s;}
+.cinfo-val a:hover{color:var(--blue3);}
+
+/* Form card */
+.form-card{
+  background:var(--white);
+  border-radius:20px;
+  padding:3rem 2.8rem;
+  box-shadow:0 24px 80px rgba(0,0,0,.3);
+}
+.form-title{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:var(--ink);margin-bottom:.3rem;line-height:1.1;}
+.form-sub{font-size:.82rem;color:var(--muted);margin-bottom:2rem;line-height:1.6;}
+.fg{margin-bottom:1.2rem;}
+.fg label{
+  display:block;font-size:.6rem;font-weight:700;
+  letter-spacing:.18em;text-transform:uppercase;
+  color:var(--mid);margin-bottom:.5rem;
+}
+.fg input,.fg select,.fg textarea{
+  width:100%;
+  background:var(--cream);
+  border:1.5px solid transparent;
+  border-radius:8px;
+  padding:.9rem 1.1rem;
+  font-family:'DM Sans',sans-serif;font-size:.88rem;color:var(--ink);
+  outline:none;
+  transition:border-color .2s,background .2s,box-shadow .2s;
+  -webkit-appearance:none;
+}
+.fg input:focus,.fg select:focus,.fg textarea:focus{
+  border-color:var(--blue2);
+  background:var(--white);
+  box-shadow:0 0 0 4px rgba(30,136,229,.1);
+}
+.fg input::placeholder,.fg textarea::placeholder{color:var(--muted);}
+.fg textarea{resize:vertical;min-height:100px;}
+.fg select{cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%233a5a80' stroke-width='2' stroke-linecap='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center;padding-right:2.5rem;}
+.form-row2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.form-divider{height:1px;background:var(--border);margin:1.4rem 0;}
+.wa-btn{
+  width:100%;background:#25D366;color:var(--white);
+  padding:1.05rem;font-family:'DM Sans',sans-serif;
+  font-weight:700;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;
+  border:none;border-radius:8px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;gap:.7rem;
+  transition:background .2s,transform .15s;
+}
+.wa-btn:hover{background:#1da851;transform:translateY(-1px);}
+.wa-btn:active{transform:none;}
+.wa-btn svg{width:18px;height:18px;fill:var(--white);}
+.form-note{text-align:center;font-size:.7rem;color:var(--muted);margin-top:1rem;}
+
+/* ── FOOTER ── */
+footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:64px 60px 32px;}
+.foot-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem;}
+.foot-brand p{font-size:.82rem;color:rgba(255,255,255,.35);line-height:1.85;margin-top:1rem;max-width:230px;}
+.foot-col h4{font-size:.58rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--blue3);margin-bottom:1.2rem;}
+.foot-col ul{list-style:none;display:flex;flex-direction:column;gap:.6rem;}
+.foot-col li a{font-size:.82rem;color:rgba(255,255,255,.38);transition:color .2s;}
+.foot-col li a:hover{color:var(--blue3);}
+.foot-col li span{font-size:.82rem;color:rgba(255,255,255,.38);}
+.foot-logo .l1{color:var(--white);}
+.foot-bot{border-top:1px solid rgba(255,255,255,.06);padding-top:2rem;max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
+.foot-bot p{font-size:.72rem;color:rgba(255,255,255,.22);}
+
+/* ── CAR DETAIL OVERLAY ── */
+.car-detail{display:none;position:fixed;inset:0;z-index:950;background:#f0f6ff;overflow-y:auto;}
+.car-detail.open{display:block;animation:slideUp .32s ease;}
+@keyframes slideUp{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:none;}}
+.detail-topbar{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);height:56px;display:flex;align-items:center;padding:0 24px;justify-content:space-between;}
+.back-btn{display:flex;align-items:center;gap:.5rem;font-size:.72rem;font-weight:600;letter-spacing:.06em;color:var(--mid);cursor:pointer;transition:color .2s;background:none;border:none;font-family:'DM Sans',sans-serif;}
+.back-btn:hover{color:var(--ink);}
+.back-btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;}
+.detail-inner{max-width:960px;margin:0 auto;padding:20px 20px 60px;}
+.detail-hero-img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;margin-bottom:14px;background:var(--cream2);}
+.detail-car-title{font-family:'DM Sans',sans-serif;font-size:1.35rem;font-weight:800;color:var(--ink);line-height:1.2;margin-bottom:4px;}
+.detail-price-row{display:flex;align-items:flex-end;gap:1.2rem;flex-wrap:wrap;margin:8px 0 4px;}
+.detail-price{font-size:2rem;font-weight:900;color:var(--blue);line-height:1;}
+.detail-price sup{font-size:.85rem;vertical-align:super;font-weight:700;}
+.detail-finance-wrap{display:flex;align-items:center;gap:.5rem;}
+.detail-finance-label{font-size:.72rem;color:var(--muted);}
+.detail-finance-amount{font-size:.82rem;font-weight:700;color:var(--ink);text-decoration:underline;text-underline-offset:2px;cursor:pointer;}
+.detail-vat-note{font-size:.68rem;color:var(--muted);margin-bottom:14px;}
+.detail-meta-row{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:18px;}
+.detail-meta-pill{display:inline-flex;align-items:center;gap:.35rem;font-size:.72rem;font-weight:500;color:var(--ink2);background:var(--white);border:1px solid var(--border2);border-radius:999px;padding:.32rem .9rem;}
+.detail-meta-pill svg{width:12px;height:12px;fill:none;stroke:var(--mid);stroke-width:2;stroke-linecap:round;}
+.detail-meta-pill .cert-dot{width:9px;height:9px;border-radius:50%;background:var(--blue3);flex-shrink:0;}
+.detail-actions{display:flex;flex-direction:column;gap:.55rem;margin-bottom:20px;}
+.detail-btn-reserve{width:100%;background:var(--blue);color:#fff;padding:.95rem;border:none;border-radius:8px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;display:flex;align-items:center;justify-content:center;gap:.6rem;transition:background .2s;}
+.detail-btn-reserve:hover{background:var(--blue2);}
+.detail-btn-row{display:grid;grid-template-columns:1fr 1fr;gap:.55rem;}
+.detail-btn-secondary{background:var(--ink);color:#fff;padding:.85rem;border:none;border-radius:8px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;display:flex;align-items:center;justify-content:center;gap:.5rem;transition:background .2s;}
+.detail-btn-secondary:hover{background:#1a3050;}
+.detail-btn-outline{background:var(--white);color:var(--ink);padding:.85rem;border:1.5px solid var(--border2);border-radius:8px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;display:flex;align-items:center;justify-content:center;gap:.5rem;transition:border-color .2s;}
+.detail-btn-outline:hover{border-color:var(--blue);}
+.detail-btn-icon{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;flex-shrink:0;}
+.detail-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.4rem;margin-bottom:14px;}
+.detail-card-title{font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);margin-bottom:1.1rem;}
+.detail-row{display:flex;justify-content:space-between;align-items:center;padding:.7rem 0;border-bottom:1px solid var(--border);font-size:.84rem;}
+.detail-row:last-child{border-bottom:none;}
+.detail-row-label{color:var(--mid);}
+.detail-row-value{font-weight:700;color:var(--ink);text-align:right;}
+.detail-condition-badge{display:flex;align-items:flex-start;gap:.7rem;background:#eff6ff;border:1px solid #93c5fd;border-radius:8px;padding:1rem 1.1rem;margin:.8rem 0 1rem;}
+.detail-cond-dot{width:14px;height:14px;border-radius:50%;background:var(--blue3);flex-shrink:0;margin-top:3px;}
+.detail-cond-text{font-size:.82rem;color:var(--ink2);line-height:1.65;}
+.detail-view-cond{width:100%;background:var(--white);border:1.5px solid var(--border2);border-radius:8px;padding:.75rem;font-family:'DM Sans',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.5rem;transition:border-color .2s;}
+.detail-view-cond:hover{border-color:var(--blue);}
+.detail-view-cond svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;}
+@media(min-width:768px){
+  .detail-inner{padding:28px 40px 80px;}
+  .detail-hero-img{aspect-ratio:16/8;}
+  .detail-car-title{font-size:1.6rem;}
+  .detail-actions{display:grid;grid-template-columns:1fr 1fr;gap:.55rem;}
+  .detail-btn-reserve{grid-column:1/-1;}
+  .detail-btn-row{display:contents;}
+}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  nav{padding:0 30px;}
+  .nav-links{display:none;}
+  .hamburger{display:flex;}
+  .section{padding:70px 30px;}
+  .featured-section,.faq-section,.services-section,.process-section,.testi-section{padding:70px 30px;}
+  .contact-section{padding:70px 30px;}
+  .cars-grid,.services-grid,.testi-grid{grid-template-columns:repeat(2,1fr);}
+  .featured-grid,.about-layout,.contact-grid{grid-template-columns:1fr;gap:3rem;}
+  footer{padding:50px 30px 24px;}
+  .foot-inner{grid-template-columns:1fr 1fr;gap:2rem;}
+  .why-inner{grid-template-columns:repeat(2,1fr);}
+  .why-item:nth-child(2){border-right:none;}
+  .company-cards-grid{grid-template-columns:repeat(2,1fr);}
+  .our-company-section{padding:48px 28px;}
+  .stats-inner{grid-template-columns:repeat(2,1fr);}
+  .stat-item:nth-child(2){border-right:none;}
+  .process-steps{grid-template-columns:repeat(2,1fr);gap:2rem;}
+  .process-steps::before{display:none;}
+  .process-header{flex-direction:column;align-items:flex-start;}
+}
+@media(max-width:640px){
+  nav{padding:0 16px;height:56px;}
+  .mob-menu{top:56px;}
+  .hero{margin-top:56px;}
+  .hero-text{padding:0 20px 28px;}
+  .hero-model{font-size:clamp(1.9rem,9vw,2.8rem);}
+  .hbtn{padding:.82rem 1.6rem;font-size:.74rem;}
+  .cars-grid,.services-grid,.testi-grid,.company-cards-grid{grid-template-columns:1fr;}
+  .why-inner,.stats-inner,.process-steps{grid-template-columns:1fr;}
+  .why-item{border-right:none;border-bottom:1px solid var(--border);}
+  .stat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.08);}
+  .stat-item:last-child{border-bottom:none;}
+  .section{padding:56px 16px;}
+  .featured-section,.faq-section,.services-section,.process-section,.testi-section,.contact-section{padding:56px 16px;}
+  footer{padding:40px 16px 20px;}
+  .foot-inner{grid-template-columns:1fr;}
+  .feat-btns{flex-direction:column;}
+  .form-row2{grid-template-columns:1fr;}
+  .feat-list{grid-template-columns:1fr;}
+  .detail-topbar{padding:0 16px;}
+  .our-company-section{padding:40px 16px;}
+  .form-card{padding:2rem 1.5rem;}
+  .contact-grid{gap:2.5rem;}
+  .stats-section,.process-section,.testi-section{padding:56px 16px;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-logo">
+    <div class="logo-circle">
+      <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+    </div>
+    <div class="logo-text">
+      <div class="l1">Boss Calaz</div>
+      <div class="l2">Zvishavane, Zimbabwe</div>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#inventory">Inventory</a></li>
+    <li><a href="#featured">Featured</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Enquire Now</button>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mobMenu">
+  <a href="#inventory" onclick="closeMob()">Inventory</a>
+  <a href="#featured" onclick="closeMob()">Featured</a>
+  <a href="#services" onclick="closeMob()">Services</a>
+  <a href="#about" onclick="closeMob()">About</a>
+  <a href="#contact" onclick="closeMob()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" id="heroBg">
+    <img src="carz.avif" alt="Quality Stock" id="heroImg0">
+    <img src="lineup.webp" alt="Car Lineup" id="heroImg1" style="display:none">
+  </div>
+  <div class="hero-text">
+    <div class="hero-badge">
+      <div class="hero-badge-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      </div>
+      <div class="hero-badge-text">
+        <div class="hb1">Boss Calaz</div>
+        <div class="hb2">Zvishavane · Open 24hrs</div>
+      </div>
+    </div>
+    <div class="hero-model" id="heroModel">Boss Calaz Zvishavane</div>
+    <div class="hero-btns">
+      <button class="hbtn hbtn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Enquire Now</button>
+      <button class="hbtn hbtn-secondary" onclick="document.getElementById('inventory').scrollIntoView({behavior:'smooth'})">View Inventory</button>
+    </div>
+  </div>
+</section>
+<div class="hero-dots" id="heroDots"></div>
+
+<!-- WHY STRIP -->
+<div class="why-strip">
+  <div class="why-inner">
+    <div class="why-item reveal delay-1">
+      <div class="why-num">01</div>
+      <div><div class="why-t">Nationwide Supply</div><div class="why-s">We deliver any car to your location</div></div>
+    </div>
+    <div class="why-item reveal delay-2">
+      <div class="why-num">02</div>
+      <div><div class="why-t">Be Forward Service</div><div class="why-s">Direct imports &amp; Be Forward sourcing</div></div>
+    </div>
+    <div class="why-item reveal delay-3">
+      <div class="why-num">03</div>
+      <div><div class="why-t">Open 24 Hours</div><div class="why-s">Always available for your enquiry</div></div>
+    </div>
+    <div class="why-item reveal delay-4">
+      <div class="why-num">04</div>
+      <div><div class="why-t">Swaps &amp; Tops</div><div class="why-s">We do swaps and top-ups on any deal</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- INVENTORY -->
+<section class="section" id="inventory">
+  <div class="ct">
+    <div class="sec-tag reveal">Our Collection</div>
+    <h2 class="sec-h2 reveal">Premium <em>Vehicles</em></h2>
+    <div class="sec-rule reveal"></div>
+    <p class="sec-p reveal" style="margin-bottom:2.5rem">Quality cars sourced nationwide and available now. We buy, sell and import motor vehicles across Zimbabwe.</p>
+    <div class="filter-row reveal">
+      <button class="pill active" onclick="filterCars('all',this)">All</button>
+      <button class="pill" onclick="filterCars('pickup',this)">Pickups</button>
+      <button class="pill" onclick="filterCars('suv',this)">SUVs</button>
+      <button class="pill" onclick="filterCars('sedan',this)">Sedans</button>
+      <button class="pill" onclick="filterCars('van',this)">Vans</button>
+    </div>
+    <div class="cars-grid" id="carsGrid">
+      <div class="car-card reveal delay-1" data-cat="pickup" onclick="openDetail(0)">
+        <div class="car-img">
+          <img src="toyota hilux gd6.jpeg" alt="Toyota Hillux GD6" loading="lazy">
+          <div class="car-badge-el new">New Arrival</div>
+          <button class="fav-btn" onclick="toggleFav(event,this)" aria-label="Favourite"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+        </div>
+        <div class="car-body">
+          <div class="car-name"><strong>Toyota</strong> Hillux GD6 Auto</div>
+          <div class="car-specs"><span class="spec">Low km</span><span class="spec">A Rated</span><span class="spec"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Zvishavane</span></div>
+          <div class="car-footer"><div class="car-price"><sup>$</sup>45,000</div><div class="car-finance">Call <span>+263 78 544 3085</span> for details</div><div class="car-certified">Certified</div></div>
+        </div>
+      </div>
+      <div class="car-card reveal delay-2" data-cat="suv" onclick="openDetail(1)">
+        <div class="car-img">
+          <img src="toyota fortuner gd6.jpeg" alt="Toyota Fortuner GD6" loading="lazy">
+          <div class="car-badge-el sale">Special Price</div>
+          <button class="fav-btn" onclick="toggleFav(event,this)" aria-label="Favourite"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+        </div>
+        <div class="car-body">
+          <div class="car-name"><strong>Toyota</strong> Fortuner GD6</div>
+          <div class="car-specs"><span class="spec">Low km</span><span class="spec">A Rated</span><span class="spec"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Zvishavane</span></div>
+          <div class="car-footer"><div class="car-price"><sup>$</sup>39,000</div><div class="car-price-original">$47,000</div><div class="car-finance">Call <span>+263 78 544 3085</span></div><div class="car-certified">Certified</div></div>
+        </div>
+      </div>
+      <div class="car-card reveal delay-3" data-cat="pickup" onclick="openDetail(2)">
+        <div class="car-img">
+          <img src="ford ranger.jpeg" alt="Ford Ranger Wildtrak" loading="lazy">
+          <div class="car-badge-el import">Import</div>
+          <button class="fav-btn" onclick="toggleFav(event,this)" aria-label="Favourite"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+        </div>
+        <div class="car-body">
+          <div class="car-name"><strong>Ford</strong> Ranger Wildtrak Petrol</div>
+          <div class="car-specs"><span class="spec">Low km</span><span class="spec">A Rated</span><span class="spec"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Zvishavane</span></div>
+          <div class="car-footer"><div class="car-price"><sup>$</sup>59,000</div><div class="car-finance">Call <span>+263 78 544 3085</span></div><div class="car-certified">Certified</div></div>
+        </div>
+      </div>
+      <div class="car-card reveal delay-1" data-cat="sedan" onclick="openDetail(3)">
+        <div class="car-img">
+          <img src="benz c25.jpeg" alt="Mercedes Benz C250" loading="lazy">
+          <div class="car-badge-el sale">Special Price</div>
+          <button class="fav-btn" onclick="toggleFav(event,this)" aria-label="Favourite"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+        </div>
+        <div class="car-body">
+          <div class="car-name"><strong>Mercedes Benz</strong> C250</div>
+          <div class="car-specs"><span class="spec">Low km</span><span class="spec">A Rated</span><span class="spec"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Zvishavane</span></div>
+          <div class="car-footer"><div class="car-price"><sup>$</sup>27,500</div><div class="car-finance">Call <span>+263 78 544 3085</span></div><div class="car-certified">Certified</div></div>
+        </div>
+      </div>
+      <div class="car-card reveal delay-2" data-cat="suv" onclick="openDetail(4)">
+        <div class="car-img">
+          <img src="honda vezzel.jpeg" alt="Honda Vezzel Hybrid" loading="lazy">
+          <div class="car-badge-el new">Hybrid</div>
+          <button class="fav-btn" onclick="toggleFav(event,this)" aria-label="Favourite"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+        </div>
+        <div class="car-body">
+          <div class="car-name"><strong>Honda</strong> Vezzel Hybrid</div>
+          <div class="car-specs"><span class="spec">Low km</span><span class="spec">Hybrid</span><span class="spec"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Zvishavane</span></div>
+          <div class="car-footer"><div class="car-price"><sup>$</sup>14,800</div><div class="car-finance">Call <span>+263 78 544 3085</span></div><div class="car-certified">Certified</div></div>
+        </div>
+      </div>
+      <div class="car-card reveal delay-3" data-cat="van" onclick="openDetail(5)">
+        <div class="car-img">
+          <img src="toyota hiace.jpeg" alt="Toyota Hiace" loading="lazy">
+          <div class="car-badge-el new">New Arrival</div>
+          <button class="fav-btn" onclick="toggleFav(event,this)" aria-label="Favourite"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+        </div>
+        <div class="car-body">
+          <div class="car-name"><strong>Toyota</strong> Hiace Super GL 1KD Auto</div>
+          <div class="car-specs"><span class="spec">Low km</span><span class="spec">A Rated</span><span class="spec"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Zvishavane</span></div>
+          <div class="car-footer"><div class="car-price"><sup>$</sup>16,500</div><div class="car-finance">Call <span>+263 78 544 3085</span></div><div class="car-certified">Certified</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ NEW SECTION 1: STATS BANNER ══ -->
+<section class="stats-section">
+  <div class="stats-inner">
+    <div class="stat-item reveal delay-1">
+      <span class="stat-num">500<span>+</span></span>
+      <span class="stat-label">Cars Sold</span>
+      <div class="stat-desc">Happy customers across Zimbabwe</div>
+    </div>
+    <div class="stat-item reveal delay-2">
+      <span class="stat-num">24<span>/7</span></span>
+      <span class="stat-label">Always Open</span>
+      <div class="stat-desc">Call or WhatsApp any time of day</div>
+    </div>
+    <div class="stat-item reveal delay-3">
+      <span class="stat-num">10<span>+</span></span>
+      <span class="stat-label">Brands Stocked</span>
+      <div class="stat-desc">Toyota, Ford, Mercedes, Honda &amp; more</div>
+    </div>
+    <div class="stat-item reveal delay-4">
+      <span class="stat-num">1<span>st</span></span>
+      <span class="stat-label">In Zvishavane</span>
+      <div class="stat-desc">The region's most trusted car dealer</div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED -->
+<section class="featured-section" id="featured">
+  <div class="featured-grid">
+    <div class="feat-img-block reveal-left">
+      <div class="feat-main-img">
+        <img src="toyota hilux legend.jpeg" alt="Toyota Hillux Legend Featured" loading="lazy">
+      </div>
+      <div class="feat-thumb-row">
+        <div class="feat-thumb"><img src="toyota hilux legend2.jpeg" alt="Side View" loading="lazy"></div>
+        <div class="feat-thumb"><img src="toyota hilux legend3.jpeg" alt="Interior" loading="lazy"></div>
+      </div>
+    </div>
+    <div class="reveal-right">
+      <div class="feat-tag">Featured Vehicle</div>
+      <div class="feat-name">Toyota Hillux Legend 2.8 Auto</div>
+      <p style="font-size:.88rem;color:var(--mid);line-height:1.9">One of the most capable and sought-after double cabs in Zimbabwe. Fully loaded, low mileage, and in excellent condition. Be Forward sourced and fully cleared.</p>
+      <div class="feat-price">$70,000 <span>negotiable</span></div>
+      <ul class="feat-list">
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>2.8L Turbodiesel</li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Automatic Transmission</li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Low Mileage</li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>4WD Capable</li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Full Service History</li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Nationwide Delivery</li>
+      </ul>
+      <div class="feat-btns">
+        <button class="btn-ink" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Enquire Now</button>
+        <button class="btn-line" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Test Drive</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ NEW SECTION 2: HOW IT WORKS ══ -->
+<section class="process-section">
+  <div class="process-inner">
+    <div class="process-header">
+      <div class="reveal-left">
+        <div class="sec-tag">Simple Process</div>
+        <h2 class="sec-h2">How It <em>Works</em></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <p class="sec-p reveal-right">From first enquiry to driving away — we make buying or selling your car as easy as a single WhatsApp message.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal delay-1">
+        <div class="step-circle">
+          <span class="step-num">1</span>
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <div class="step-title">Contact Us</div>
+        <div class="step-text">WhatsApp or call us on +263 78 544 3085. Tell us what you're looking for — we'll help you right away.</div>
+      </div>
+      <div class="process-step reveal delay-2">
+        <div class="step-circle">
+          <span class="step-num">2</span>
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <div class="step-title">Browse &amp; Select</div>
+        <div class="step-text">View our full catalogue. Request any car — if it's not listed, we'll source it locally or import it through Be Forward.</div>
+      </div>
+      <div class="process-step reveal delay-3">
+        <div class="step-circle">
+          <span class="step-num">3</span>
+          <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <div class="step-title">Reserve &amp; Pay</div>
+        <div class="step-text">Secure your vehicle with a deposit. We accept cash, EcoCash, and bank transfers. Swaps and trade-ins welcome.</div>
+      </div>
+      <div class="process-step reveal delay-4">
+        <div class="step-circle">
+          <span class="step-num">4</span>
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <div class="step-title">Drive Away</div>
+        <div class="step-text">Pick up in Zvishavane or have your car delivered anywhere in Zimbabwe. Safe, on time, every time.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ NEW SECTION 3: SERVICES ══ -->
+<section class="services-section" id="services">
+  <div class="services-inner">
+    <div class="services-header reveal">
+      <div class="sec-tag" style="justify-content:center">What We Do</div>
+      <h2 class="sec-h2">Our <em>Services</em></h2>
+      <div class="sec-rule" style="margin:1rem auto 1.2rem"></div>
+      <p class="sec-p" style="margin:0 auto;text-align:center;max-width:520px">From buying your first car to importing your dream vehicle — Boss Calaz handles everything, so you don't have to.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal delay-1">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+        <div class="service-title">Buy &amp; Sell</div>
+        <div class="service-text">Looking to buy or sell a car? We offer competitive prices, same-day valuations, and a fast, transparent sales process with full receipting.</div>
+        <div class="service-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get a Quote <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+      </div>
+      <div class="service-card reveal delay-2">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <div class="service-title">Be Forward Imports</div>
+        <div class="service-text">We handle the complete Be Forward import process — selection in Japan, payment, shipping, customs clearance, and delivery to your door in Zimbabwe.</div>
+        <div class="service-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Start Import <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+      </div>
+      <div class="service-card reveal delay-3">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div>
+        <div class="service-title">Swaps &amp; Tops</div>
+        <div class="service-text">Upgrade your vehicle without the hassle. Bring your current car, we give it an honest valuation, and you top up the difference on the car you want.</div>
+        <div class="service-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Enquire <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+      </div>
+      <div class="service-card reveal delay-1">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+        <div class="service-title">24/7 Availability</div>
+        <div class="service-text">We never close. Whether it's 2am or a Sunday afternoon, call or WhatsApp us and we will respond. Your convenience is our priority.</div>
+        <div class="service-cta" onclick="window.open('https://wa.me/263785443085','_blank')">WhatsApp Now <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+      </div>
+      <div class="service-card reveal delay-2">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+        <div class="service-title">Nationwide Delivery</div>
+        <div class="service-text">Buy your car from Zvishavane and we deliver it to Harare, Bulawayo, Mutare — anywhere in Zimbabwe, safely and on schedule.</div>
+        <div class="service-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Arrange Delivery <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+      </div>
+      <div class="service-card reveal delay-3">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="service-title">Verified &amp; Inspected</div>
+        <div class="service-text">Every vehicle we stock is checked before listing. You receive a full condition report — no surprises, no hidden issues. Just honest cars at fair prices.</div>
+        <div class="service-cta" onclick="document.getElementById('inventory').scrollIntoView({behavior:'smooth'})">View Stock <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="ct">
+    <div class="about-layout">
+      <div class="about-img-wrap reveal-left">
+        <div class="about-img-main">
+          <img src="toyota hiace.jpeg" alt="About Boss Calaz" loading="lazy">
+        </div>
+        <div class="about-num-card">
+          <div class="anc-n">24/7</div>
+          <div class="anc-l">Always Open</div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="sec-tag">Our Story</div>
+        <h2 class="sec-h2">Zvishavane's <em>Trusted</em> Dealer</h2>
+        <div class="sec-rule"></div>
+        <p class="sec-p">Boss Calaz is Zimbabwe's trusted destination for quality vehicles. Based in Zvishavane CBD, we supply cars nationwide — buying, selling, importing, and delivering any vehicle of your choice, anywhere in Zimbabwe.</p>
+        <div class="af-list">
+          <div class="af"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Nationwide supply &amp; delivery</div>
+          <div class="af"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Be Forward import services</div>
+          <div class="af"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Swaps, tops &amp; trade-ins welcome</div>
+          <div class="af"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Open 24 hours — always available</div>
+        </div>
+        <div class="about-strip">
+          <div class="act">
+            <div class="act-ico"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.42 2 2 0 0 1 3.6 1.25h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16"/></svg></div>
+            <div><strong>+263 78 544 3085</strong><span>Open 24 hours, 7 days</span></div>
+          </div>
+          <div class="act">
+            <div class="act-ico"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><strong>Zvishavane CBD, Zimbabwe</strong><span>Visit us anytime — always open</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR COMPANY -->
+<section class="our-company-section" id="company">
+  <div class="our-company-title reveal">Our Company</div>
+  <div class="company-cards-grid">
+    <div class="company-card reveal delay-1">
+      <img class="company-card-img" src="honda vezzel.jpeg" alt="Quality" loading="lazy">
+      <div class="company-card-body">
+        <div class="company-card-tag">Quality</div>
+        <p class="company-card-text">Every vehicle we supply is sourced and verified — because you deserve to drive with confidence, wherever you are in Zimbabwe.</p>
+        <a href="#inventory" class="company-card-link">View Inventory</a>
+      </div>
+    </div>
+    <div class="company-card reveal delay-2">
+      <img class="company-card-img" src="toyota hilux legend2.jpeg" alt="Be Forward" loading="lazy">
+      <div class="company-card-body">
+        <div class="company-card-tag">Be Forward Services</div>
+        <p class="company-card-text">We handle the full Be Forward import process for you — from selection in Japan to delivery at your door. Stress-free importing made easy.</p>
+        <a href="#contact" class="company-card-link">Learn More</a>
+      </div>
+    </div>
+    <div class="company-card reveal delay-3">
+      <img class="company-card-img" src="toyota legend50.jpeg" alt="Deliver" loading="lazy">
+      <div class="company-card-body">
+        <div class="company-card-tag">Nationwide Delivery</div>
+        <p class="company-card-text">Wherever you are in Zimbabwe, we deliver. Buy from Zvishavane and have your car brought directly to you — safe and on time.</p>
+        <a href="#contact" class="company-card-link">Get In Touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ NEW SECTION 4: TESTIMONIALS ══ -->
+<section class="testi-section">
+  <div class="testi-inner">
+    <div class="testi-header reveal">
+      <div class="sec-tag">What Clients Say</div>
+      <h2 class="sec-h2">Trusted by <em>Zimbabweans</em></h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal delay-1">
+        <div class="testi-stars">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div class="testi-quote-icon"><svg viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg></div>
+        <p class="testi-text">Boss Calaz made buying my Fortuner so easy. I WhatsApp'd them at night and had a deal by morning. The car was exactly as described — no surprises at all.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">T</div>
+          <div><div class="testi-name">Tendai M.</div><div class="testi-loc">Harare, Zimbabwe</div></div>
+        </div>
+      </div>
+      <div class="testi-card reveal delay-2">
+        <div class="testi-stars">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div class="testi-quote-icon"><svg viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg></div>
+        <p class="testi-text">They handled my Be Forward import from start to finish. I just sent them the link and they sorted everything — shipping, clearance, delivery to Bulawayo. Honestly impressive.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">S</div>
+          <div><div class="testi-name">Sibongile N.</div><div class="testi-loc">Bulawayo, Zimbabwe</div></div>
+        </div>
+      </div>
+      <div class="testi-card reveal delay-3">
+        <div class="testi-stars">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div class="testi-quote-icon"><svg viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg></div>
+        <p class="testi-text">Did a swap with Boss Calaz for my Hillux GD6. Got a very fair trade-in value, they were honest throughout, and the whole deal was done in one day. Will use again.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">C</div>
+          <div><div class="testi-name">Chido R.</div><div class="testi-loc">Zvishavane, Zimbabwe</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ — REDESIGNED -->
+<section class="faq-section" id="faq">
+  <div class="faq-inner">
+    <div class="faq-header reveal">
+      <div class="sec-tag">Common Questions</div>
+      <h2 class="faq-h2">Frequently Asked <em style="color:var(--blue2);font-style:italic">Questions</em></h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item reveal delay-1">
+        <button class="faq-q" onclick="toggleFaq(this)">Do you deliver vehicles nationwide?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+        <div class="faq-a">Yes. Boss Calaz delivers any vehicle to any location in Zimbabwe. Just tell us where you are and we'll arrange delivery at the best price.</div>
+      </div>
+      <div class="faq-item reveal delay-2">
+        <button class="faq-q" onclick="toggleFaq(this)">Can I swap my current vehicle?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+        <div class="faq-a">Absolutely. We do swaps and tops — bring your vehicle and we'll work out a deal that suits both parties. No swap is too big or too small.</div>
+      </div>
+      <div class="faq-item reveal delay-3">
+        <button class="faq-q" onclick="toggleFaq(this)">What is the Be Forward service?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+        <div class="faq-a">We source and import vehicles directly from Japan through Be Forward. We handle the entire process — selection, payment, shipping, and clearance — so you don't have to.</div>
+      </div>
+      <div class="faq-item reveal delay-1">
+        <button class="faq-q" onclick="toggleFaq(this)">Are your vehicles inspected before sale?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+        <div class="faq-a">Yes. All vehicles are checked and vetted before listing. We pride ourselves on honest, transparent transactions so you know exactly what you are getting.</div>
+      </div>
+      <div class="faq-item reveal delay-2">
+        <button class="faq-q" onclick="toggleFaq(this)">Can I reserve a vehicle before paying in full?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+        <div class="faq-a">Yes. A deposit can hold any vehicle while you arrange the balance. Contact us to agree on reservation terms for the car you want.</div>
+      </div>
+      <div class="faq-item reveal delay-3">
+        <button class="faq-q" onclick="toggleFaq(this)">What are your trading hours?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+        <div class="faq-a">We are open 24 hours, 7 days a week. Call or WhatsApp +263 78 544 3085 any time.</div>
+      </div>
+      <div class="faq-item reveal delay-1">
+        <button class="faq-q" onclick="toggleFaq(this)">Do you buy vehicles?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+        <div class="faq-a">Yes. We buy cars for resale. If you want to sell your vehicle, contact us for a quick valuation and we'll make a fair offer the same day.</div>
+      </div>
+      <div class="faq-item reveal delay-2">
+        <button class="faq-q" onclick="toggleFaq(this)">What payment methods do you accept?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+        <div class="faq-a">We accept USD cash, bank transfers, Ecocash, and RTGS/ZWL transfers. All transactions are fully receipted for your peace of mind.</div>
+      </div>
+      <div class="faq-item reveal delay-3">
+        <button class="faq-q" onclick="toggleFaq(this)">Can I request a specific car not listed?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+        <div class="faq-a">Definitely. We source any vehicle on request — locally or through Be Forward imports. Just tell us what you want and we'll find it at the right price.</div>
+      </div>
+      <div class="faq-item reveal delay-1">
+        <button class="faq-q" onclick="toggleFaq(this)">Are prices negotiable?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+        <div class="faq-a">Our prices reflect the current market but we are always open to fair discussion. Call us and let's talk — we'll do our best to make a deal work for you.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT — REDESIGNED -->
+<section class="contact-section" id="contact">
+  <div class="contact-grid">
+    <div class="contact-left reveal-left">
+      <div class="sec-tag">Get In Touch</div>
+      <h2 class="sec-h2">Let's Find Your <em>Perfect Car</em></h2>
+      <div class="sec-rule"></div>
+      <p class="sec-p">Whether you're ready to buy, sell, swap, or import — our team is available 24/7 to help you get the best deal.</p>
+      <div class="cinfo-list">
+        <div class="cinfo-row">
+          <div class="cinfo-ico"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.42 2 2 0 0 1 3.6 1.25h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16"/></svg></div>
+          <div><div class="cinfo-lbl">WhatsApp / Phone</div><div class="cinfo-val"><a href="tel:+263785443085">+263 78 544 3085</a></div></div>
+        </div>
+        <div class="cinfo-row">
+          <div class="cinfo-ico"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><div class="cinfo-lbl">Location</div><div class="cinfo-val">Zvishavane CBD, Zimbabwe</div></div>
+        </div>
+        <div class="cinfo-row">
+          <div class="cinfo-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div><div class="cinfo-lbl">Trading Hours</div><div class="cinfo-val">Open 24 Hours, 7 Days a Week</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal-right">
+      <div class="form-card">
+        <div class="form-title">Send an Enquiry</div>
+        <div class="form-sub">Fill in the form below and we'll respond on WhatsApp — usually within minutes.</div>
+        <div class="fg">
+          <label>Full Name</label>
+          <input type="text" placeholder="Your full name">
+        </div>
+        <div class="form-row2">
+          <div class="fg">
+            <label>Phone / WhatsApp</label>
+            <input type="tel" placeholder="+263 ...">
+          </div>
+          <div class="fg">
+            <label>Email Address</label>
+            <input type="email" placeholder="you@email.com">
+          </div>
+        </div>
+        <div class="fg">
+          <label>Vehicle of Interest</label>
+          <select>
+            <option>Toyota Hillux GD6 Auto — $45,000</option>
+            <option>Toyota Fortuner GD6 — $39,000</option>
+            <option>Ford Ranger Wildtrak — $59,000</option>
+            <option>Mercedes Benz C250 — $27,500</option>
+            <option>Honda Vezzel Hybrid — $14,800</option>
+            <option>Toyota Hiace Super GL — $16,500</option>
+            <option>Toyota Hillux Legend 2.8 — $70,000</option>
+            <option>Be Forward Import Request</option>
+            <option>Swap / Top Enquiry</option>
+            <option>General Enquiry / Sell My Car</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label>Message</label>
+          <textarea placeholder="Any questions, specifications or requirements..."></textarea>
+        </div>
+        <div class="form-divider"></div>
+        <button class="wa-btn" onclick="sendWhatsApp()">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          Send via WhatsApp
+        </button>
+        <div class="form-note">We typically respond within a few minutes · Open 24/7</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-inner">
+    <div class="foot-brand">
+      <div class="nav-logo foot-logo">
+        <div class="logo-circle"><svg viewBox="0 0 24 24" style="fill:none;stroke:#29b6f6;stroke-width:2;stroke-linecap:round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <div class="logo-text">
+          <div class="l1">Boss Calaz</div>
+          <div class="l2" style="color:rgba(255,255,255,.3)">Zvishavane, Zimbabwe</div>
+        </div>
+      </div>
+      <p>Buying, selling and importing quality motor vehicles nationwide. Open 24 hours, always here for you.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Inventory</h4>
+      <ul>
+        <li><a href="#inventory">All Cars</a></li>
+        <li><a href="#inventory">Pickups</a></li>
+        <li><a href="#inventory">SUVs</a></li>
+        <li><a href="#inventory">Sedans</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Buy My Car</a></li>
+        <li><a href="#services">Swap &amp; Tops</a></li>
+        <li><a href="#services">Be Forward Import</a></li>
+        <li><a href="#services">Nationwide Delivery</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><span>+263 78 544 3085</span></li>
+        <li><span>Open 24 hours</span></li>
+        <li><span>Zvishavane CBD</span></li>
+        <li><span>WhatsApp preferred</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bot">
+    <p>&copy; 2025 Boss Calaz. All rights reserved.</p>
+    <p>Premium Cars · Zvishavane, Zimbabwe</p>
+  </div>
+</footer>
+
+<!-- CAR DETAIL OVERLAY -->
+<div class="car-detail" id="carDetail">
+  <div class="detail-topbar">
+    <button class="back-btn" onclick="closeDetail()">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      Back to Inventory
+    </button>
+    <div style="font-size:.7rem;color:var(--muted);font-weight:500">Boss Calaz</div>
+  </div>
+  <div class="detail-inner" id="detailContent"></div>
+</div>
+
+<script>
+/* ── Scroll reveal ── */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if(e.isIntersecting){ e.target.classList.add('visible'); }
+  });
+},{threshold:0.12});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el => observer.observe(el));
+
+/* ── Nav scroll ── */
+window.addEventListener('scroll', () => {
+  document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 20);
+});
+
+/* ── Hamburger ── */
+const ham = document.getElementById('hamburger');
+const mob = document.getElementById('mobMenu');
+ham.addEventListener('click', () => { ham.classList.toggle('open'); mob.classList.toggle('open'); });
+function closeMob(){ ham.classList.remove('open'); mob.classList.remove('open'); }
+
+/* ── Hero carousel ── */
+const slides = [
+  { id:'heroImg0', title:'Boss Calaz Zvishavane.' },
+  { id:'heroImg1', title:'We Supply Cars Nationwide.' },
+];
+let activeDot = 0;
+const dotsEl = document.getElementById('heroDots');
+const modelEl = document.getElementById('heroModel');
+slides.forEach((_,i) => {
+  const btn = document.createElement('button');
+  btn.className = 'hero-dot' + (i===0?' active':'');
+  btn.addEventListener('click',()=>goSlide(i));
+  dotsEl.appendChild(btn);
+});
+function goSlide(i){
+  activeDot=i;
+  slides.forEach((s,idx)=>{ const el=document.getElementById(s.id); if(el) el.style.display=idx===i?'block':'none'; });
+  modelEl.textContent=slides[i].title;
+  document.querySelectorAll('.hero-dot').forEach((d,idx)=>d.classList.toggle('active',idx===i));
+}
+setInterval(()=>goSlide((activeDot+1)%slides.length),6000);
+
+/* ── Filter ── */
+function filterCars(cat,btn){
+  document.querySelectorAll('.pill').forEach(p=>p.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.car-card').forEach(c=>{ c.style.display=(cat==='all'||c.dataset.cat===cat)?'':'none'; });
+}
+
+/* ── Favourite ── */
+function toggleFav(e,btn){ e.stopPropagation(); btn.classList.toggle('faved'); }
+
+/* ── WhatsApp ── */
+function sendWhatsApp(){
+  const name=document.querySelector('input[type="text"]').value||'Customer';
+  const phone=document.querySelector('input[type="tel"]').value||'';
+  const vehicle=document.querySelector('select').value;
+  const msg=document.querySelector('textarea').value||'';
+  const text=encodeURIComponent(`Hi Boss Calaz!\n\nName: ${name}\nPhone: ${phone}\nVehicle: ${vehicle}\nMessage: ${msg}`);
+  window.open(`https://wa.me/263785443085?text=${text}`,'_blank');
+}
+
+/* ── Car data ── */
+const carData = [
+  {make:'Toyota',name:'Hillux GD6 Auto',price:'$45,000',year:'',km:'Low km',fuel:'Diesel',trans:'Automatic',drive:'4X4',finance:'Call for details',img:'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=960&q=85',desc:'Toyota Hillux GD6 Automatic in excellent condition. One of the most reliable double cabs in Zimbabwe.',location:'Zvishavane',warranty:'Available',service:'Complete',spare:'Yes'},
+  {make:'Toyota',name:'Fortuner GD6',price:'$39,000',year:'',km:'Low km',fuel:'Diesel',trans:'Automatic',drive:'4X4',finance:'Call for details',img:'https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?w=960&q=85',desc:'Toyota Fortuner GD6 in great condition. Spacious, reliable, and capable. A top family SUV.',location:'Zvishavane',warranty:'Available',service:'Complete',spare:'Yes'},
+  {make:'Ford',name:'Ranger Wildtrak Petrol',price:'$59,000',year:'',km:'Low km',fuel:'Petrol',trans:'Automatic',drive:'4X4',finance:'Call for details',img:'https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?w=960&q=85',desc:'Ford Ranger Wildtrak in outstanding condition. Petrol engine, fully loaded. A premium workhorse.',location:'Zvishavane',warranty:'Available',service:'Complete',spare:'Yes'},
+  {make:'Mercedes Benz',name:'C250',price:'$27,500',year:'',km:'Low km',fuel:'Petrol',trans:'Automatic',drive:'4X2',finance:'Call for details',img:'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=960&q=85',desc:'Mercedes Benz C250 in excellent condition. Luxury, comfort, and performance combined.',location:'Zvishavane',warranty:'Available',service:'Complete',spare:'Yes'},
+  {make:'Honda',name:'Vezzel Hybrid',price:'$14,800',year:'',km:'Low km',fuel:'Hybrid',trans:'CVT',drive:'4X2',finance:'Call for details',img:'https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=960&q=85',desc:'Honda Vezzel Hybrid — economical and reliable. Ideal daily driver with low running costs.',location:'Zvishavane',warranty:'Available',service:'Complete',spare:'Yes'},
+  {make:'Toyota',name:'Hiace Super GL 1KD Auto',price:'$16,500',year:'',km:'Low km',fuel:'Diesel',trans:'Automatic',drive:'4X2',finance:'Call for details',img:'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=960&q=85',desc:'Toyota Hiace Super GL 1KD Automatic. Spacious and versatile, great for family or business use.',location:'Zvishavane',warranty:'Available',service:'Complete',spare:'Yes'},
+];
+
+function openDetail(i){
+  const c=carData[i];
+  document.getElementById('detailContent').innerHTML=`
+    <img class="detail-hero-img" src="${c.img}" alt="${c.name}">
+    <div class="detail-car-title">${c.year?c.year+' ':''}${c.make} ${c.name}</div>
+    <div class="detail-price-row">
+      <div class="detail-price">${c.price}</div>
+      <div class="detail-finance-wrap"><span class="detail-finance-label">Finance:</span><span class="detail-finance-amount">${c.finance}</span></div>
+    </div>
+    <div class="detail-vat-note">Prices Negotiable &nbsp;|&nbsp; Swaps &amp; Trade-Ins Welcome</div>
+    <div class="detail-meta-row">
+      <span class="detail-meta-pill"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>${c.location}</span>
+      <span class="detail-meta-pill"><span class="cert-dot"></span>Certified</span>
+      <span class="detail-meta-pill"><strong>A</strong>&nbsp;Rated</span>
+    </div>
+    <div class="detail-actions">
+      <button class="detail-btn-reserve" onclick="window.open('https://wa.me/263785443085?text=Hi%20Boss%20Calaz%2C%20I%20want%20to%20reserve%20the%20${encodeURIComponent(c.make+' '+c.name)}','_blank')">
+        <svg class="detail-btn-icon" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Reserve This Vehicle
+      </button>
+      <div class="detail-btn-row">
+        <button class="detail-btn-secondary" onclick="window.open('https://wa.me/263785443085','_blank')"><svg class="detail-btn-icon" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>I'm Interested</button>
+        <button class="detail-btn-secondary" onclick="window.open('https://wa.me/263785443085?text=Hi%2C%20I%20want%20delivery%20for%20the%20${encodeURIComponent(c.make+' '+c.name)}','_blank')"><svg class="detail-btn-icon" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Get Delivery</button>
+        <button class="detail-btn-outline" onclick="closeDetail()"><svg class="detail-btn-icon" viewBox="0 0 24 24"><polyline points="8 17 3 12 8 7"/><line x1="3" y1="12" x2="21" y2="12"/></svg>Back</button>
+        <button class="detail-btn-outline" onclick="window.open('https://wa.me/263785443085','_blank')"><svg class="detail-btn-icon" viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>Set Alert</button>
+      </div>
+    </div>
+    <div class="detail-card">
+      <div class="detail-card-title">Vehicle Details</div>
+      <div class="detail-row"><span class="detail-row-label">Make</span><span class="detail-row-value">${c.make}</span></div>
+      ${c.year?`<div class="detail-row"><span class="detail-row-label">Year</span><span class="detail-row-value">${c.year}</span></div>`:''}
+      <div class="detail-row"><span class="detail-row-label">Mileage</span><span class="detail-row-value">${c.km}</span></div>
+      <div class="detail-row"><span class="detail-row-label">Fuel Type</span><span class="detail-row-value">${c.fuel}</span></div>
+      <div class="detail-row"><span class="detail-row-label">Transmission</span><span class="detail-row-value">${c.trans}</span></div>
+      <div class="detail-row"><span class="detail-row-label">Drive Type</span><span class="detail-row-value">${c.drive}</span></div>
+      <div class="detail-row"><span class="detail-row-label">Location</span><span class="detail-row-value">${c.location}</span></div>
+    </div>
+    <div class="detail-card">
+      <div class="detail-card-title">Vehicle Condition</div>
+      <div class="detail-condition-badge"><div class="detail-cond-dot"></div><div class="detail-cond-text">This vehicle has been inspected and is in good condition with service history available on request.</div></div>
+      <button class="detail-view-cond"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>View Condition Report</button>
+      <div class="detail-row" style="margin-top:.8rem"><span class="detail-row-label">Service History</span><span class="detail-row-value">${c.service}</span></div>
+      <div class="detail-row"><span class="detail-row-label">Spare Key</span><span class="detail-row-value">${c.spare}</span></div>
+      <div class="detail-row"><span class="detail-row-label">Warranty</span><span class="detail-row-value">${c.warranty}</span></div>
+    </div>
+    <div class="detail-card">
+      <div class="detail-card-title">About This Vehicle</div>
+      <p style="font-size:.84rem;color:var(--mid);line-height:1.85;">${c.desc}</p>
+    </div>`;
+  document.getElementById('carDetail').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeDetail(){ document.getElementById('carDetail').classList.remove('open'); document.body.style.overflow=''; }
+
+/* ── FAQ ── */
+function toggleFaq(btn){
+  const item=btn.closest('.faq-item');
+  const isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+  if(!isOpen) item.classList.add('open');
+}
+</script>
+</body>
+</html>
