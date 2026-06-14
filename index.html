@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Boss Calaz | Premium Cars — Zvishavane, Zimbabwe</title>
+<title>Riley Motors | Premium Cars — Zimbabwe</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -202,153 +202,54 @@ nav.scrolled{box-shadow:0 2px 24px rgba(21,101,192,.08);}
 .company-card-link:hover{gap:.6rem;}
 .company-card-link::after{content:'›';font-size:1.1rem;line-height:1;}
 
-/* ════════════════════════════════
-   NEW SECTION 1 — STATS BANNER
-   ════════════════════════════════ */
-.stats-section{
-  background:var(--blue);
-  padding:80px 60px;
-  position:relative;
-  overflow:hidden;
-}
-.stats-section::before{
-  content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse at 70% 50%,rgba(66,165,245,0.25) 0%,transparent 70%);
-  pointer-events:none;
-}
+/* ── STATS BANNER ── */
+.stats-section{background:var(--blue);padding:80px 60px;position:relative;overflow:hidden;}
+.stats-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(66,165,245,0.25) 0%,transparent 70%);pointer-events:none;}
 .stats-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:0;}
-.stat-item{
-  text-align:center;
-  padding:2.5rem 2rem;
-  border-right:1px solid rgba(255,255,255,.12);
-  position:relative;
-}
+.stat-item{text-align:center;padding:2.5rem 2rem;border-right:1px solid rgba(255,255,255,.12);position:relative;}
 .stat-item:last-child{border-right:none;}
-.stat-num{
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(3rem,5vw,4.5rem);
-  font-weight:700;
-  color:var(--white);
-  line-height:1;
-  display:block;
-}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,5vw,4.5rem);font-weight:700;color:var(--white);line-height:1;display:block;}
 .stat-num span{color:var(--accent2);}
-.stat-label{
-  font-size:.68rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
-  color:rgba(255,255,255,.5);
-  margin-top:.6rem;display:block;
-}
-.stat-desc{
-  font-size:.8rem;color:rgba(255,255,255,.35);
-  margin-top:.35rem;line-height:1.5;
-}
+.stat-label{font-size:.68rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:.6rem;display:block;}
+.stat-desc{font-size:.8rem;color:rgba(255,255,255,.35);margin-top:.35rem;line-height:1.5;}
 
-/* ════════════════════════════════
-   NEW SECTION 2 — HOW IT WORKS
-   ════════════════════════════════ */
+/* ── HOW IT WORKS ── */
 .process-section{background:var(--white);padding:110px 60px;}
 .process-inner{max-width:1280px;margin:0 auto;}
 .process-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:64px;flex-wrap:wrap;gap:2rem;}
 .process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;}
-.process-steps::before{
-  content:'';
-  position:absolute;
-  top:44px;left:calc(12.5%);right:calc(12.5%);
-  height:1px;background:var(--border2);
-  z-index:0;
-}
-.process-step{
-  display:flex;flex-direction:column;align-items:center;
-  text-align:center;padding:0 1.5rem;position:relative;z-index:1;
-}
-.step-circle{
-  width:88px;height:88px;border-radius:50%;
-  border:2px solid var(--border2);
-  background:var(--white);
-  display:flex;align-items:center;justify-content:center;
-  margin-bottom:1.6rem;
-  position:relative;
-  transition:border-color .3s,background .3s,transform .3s;
-  cursor:default;
-}
-.process-step:hover .step-circle{
-  border-color:var(--blue2);
-  background:var(--blue);
-  transform:translateY(-4px);
-}
+.process-steps::before{content:'';position:absolute;top:44px;left:calc(12.5%);right:calc(12.5%);height:1px;background:var(--border2);z-index:0;}
+.process-step{display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 1.5rem;position:relative;z-index:1;}
+.step-circle{width:88px;height:88px;border-radius:50%;border:2px solid var(--border2);background:var(--white);display:flex;align-items:center;justify-content:center;margin-bottom:1.6rem;position:relative;transition:border-color .3s,background .3s,transform .3s;cursor:default;}
+.process-step:hover .step-circle{border-color:var(--blue2);background:var(--blue);transform:translateY(-4px);}
 .step-circle svg{width:28px;height:28px;fill:none;stroke:var(--blue2);stroke-width:1.5;stroke-linecap:round;transition:stroke .3s;}
 .process-step:hover .step-circle svg{stroke:#fff;}
-.step-num{
-  position:absolute;top:-8px;right:-8px;
-  width:24px;height:24px;border-radius:50%;
-  background:var(--blue);color:#fff;
-  font-size:.6rem;font-weight:800;
-  display:flex;align-items:center;justify-content:center;
-}
+.step-num{position:absolute;top:-8px;right:-8px;width:24px;height:24px;border-radius:50%;background:var(--blue);color:#fff;font-size:.6rem;font-weight:800;display:flex;align-items:center;justify-content:center;}
 .step-title{font-size:.88rem;font-weight:700;color:var(--ink);margin-bottom:.5rem;}
 .step-text{font-size:.78rem;color:var(--muted);line-height:1.6;}
 
-/* ════════════════════════════════
-   NEW SECTION 3 — SERVICES GRID
-   ════════════════════════════════ */
+/* ── SERVICES GRID ── */
 .services-section{background:var(--cream);padding:110px 60px;}
 .services-inner{max-width:1280px;margin:0 auto;}
 .services-header{text-align:center;margin-bottom:60px;}
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
-.service-card{
-  background:var(--white);
-  border:1px solid var(--border);
-  padding:2.4rem 2rem;
-  position:relative;
-  overflow:hidden;
-  transition:transform .3s,box-shadow .3s,border-color .3s;
-  cursor:default;
-}
-.service-card::after{
-  content:'';
-  position:absolute;bottom:0;left:0;right:0;height:3px;
-  background:linear-gradient(90deg,var(--blue),var(--blue3));
-  transform:scaleX(0);transform-origin:left;
-  transition:transform .4s cubic-bezier(.22,1,.36,1);
-}
+.service-card{background:var(--white);border:1px solid var(--border);padding:2.4rem 2rem;position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s,border-color .3s;cursor:default;}
+.service-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--blue),var(--blue3));transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.22,1,.36,1);}
 .service-card:hover{transform:translateY(-6px);box-shadow:0 16px 48px rgba(21,101,192,.13);border-color:rgba(30,136,229,.3);}
 .service-card:hover::after{transform:scaleX(1);}
-.service-icon{
-  width:52px;height:52px;border-radius:12px;
-  background:var(--cream2);
-  display:flex;align-items:center;justify-content:center;
-  margin-bottom:1.4rem;
-  transition:background .3s;
-}
+.service-icon{width:52px;height:52px;border-radius:12px;background:var(--cream2);display:flex;align-items:center;justify-content:center;margin-bottom:1.4rem;transition:background .3s;}
 .service-card:hover .service-icon{background:var(--blue);}
 .service-icon svg{width:22px;height:22px;fill:none;stroke:var(--blue2);stroke-width:1.8;stroke-linecap:round;transition:stroke .3s;}
 .service-card:hover .service-icon svg{stroke:#fff;}
 .service-title{font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:.65rem;}
 .service-text{font-size:.84rem;color:var(--mid);line-height:1.75;}
-.service-cta{
-  display:inline-flex;align-items:center;gap:.4rem;
-  font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
-  color:var(--blue2);margin-top:1.2rem;cursor:pointer;
-  transition:gap .2s;
-}
+.service-cta{display:inline-flex;align-items:center;gap:.4rem;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue2);margin-top:1.2rem;cursor:pointer;transition:gap .2s;}
 .service-cta:hover{gap:.7rem;}
 .service-cta svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;}
 
-/* ════════════════════════════════
-   NEW SECTION 4 — TESTIMONIALS
-   ════════════════════════════════ */
-.testi-section{
-  background:var(--ink);
-  padding:110px 60px;
-  position:relative;overflow:hidden;
-}
-.testi-section::before{
-  content:'';position:absolute;
-  top:-120px;right:-120px;
-  width:400px;height:400px;border-radius:50%;
-  background:radial-gradient(circle,rgba(30,136,229,.18) 0%,transparent 70%);
-  pointer-events:none;
-}
+/* ── TESTIMONIALS ── */
+.testi-section{background:var(--ink);padding:110px 60px;position:relative;overflow:hidden;}
+.testi-section::before{content:'';position:absolute;top:-120px;right:-120px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(30,136,229,.18) 0%,transparent 70%);pointer-events:none;}
 .testi-inner{max-width:1280px;margin:0 auto;}
 .testi-header{text-align:center;margin-bottom:60px;}
 .testi-header .sec-tag{color:var(--blue3);}
@@ -356,89 +257,40 @@ nav.scrolled{box-shadow:0 2px 24px rgba(21,101,192,.08);}
 .testi-header .sec-h2{color:var(--white);}
 .testi-header .sec-h2 em{color:var(--blue3);}
 .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
-.testi-card{
-  background:rgba(255,255,255,.04);
-  border:1px solid rgba(255,255,255,.08);
-  padding:2.2rem;
-  position:relative;
-  transition:background .3s,border-color .3s,transform .3s;
-}
+.testi-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:2.2rem;position:relative;transition:background .3s,border-color .3s,transform .3s;}
 .testi-card:hover{background:rgba(30,136,229,.10);border-color:rgba(30,136,229,.3);transform:translateY(-4px);}
-.testi-quote-icon{
-  width:36px;height:36px;
-  background:rgba(30,136,229,.2);border-radius:8px;
-  display:flex;align-items:center;justify-content:center;
-  margin-bottom:1.4rem;
-}
+.testi-quote-icon{width:36px;height:36px;background:rgba(30,136,229,.2);border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:1.4rem;}
 .testi-quote-icon svg{width:16px;height:16px;fill:var(--blue3);}
 .testi-text{font-size:.88rem;color:rgba(255,255,255,.65);line-height:1.85;margin-bottom:1.6rem;font-style:italic;}
 .testi-author{display:flex;align-items:center;gap:.85rem;}
-.testi-avatar{
-  width:40px;height:40px;border-radius:50%;
-  background:linear-gradient(135deg,var(--blue),var(--blue3));
-  display:flex;align-items:center;justify-content:center;
-  flex-shrink:0;
-  font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:700;color:#fff;
-}
+.testi-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--blue3));display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:700;color:#fff;}
 .testi-name{font-size:.82rem;font-weight:700;color:var(--white);}
 .testi-loc{font-size:.7rem;color:rgba(255,255,255,.35);margin-top:.1rem;}
 .testi-stars{display:flex;gap:2px;margin-bottom:1rem;}
 .testi-stars svg{width:13px;height:13px;fill:var(--blue3);}
 
-/* ════════════════════════════════
-   FAQ — REDESIGNED
-   ════════════════════════════════ */
+/* ── FAQ ── */
 .faq-section{background:var(--cream);padding:110px 60px;}
 .faq-inner{max-width:900px;margin:0 auto;}
 .faq-header{text-align:center;margin-bottom:60px;}
 .faq-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;color:var(--ink);margin-top:.4rem;line-height:1.1;}
 .faq-header .sec-tag{justify-content:center;}
 .faq-grid{display:flex;flex-direction:column;gap:.75rem;}
-.faq-item{
-  background:var(--white);
-  border:1px solid var(--border);
-  border-radius:12px;
-  overflow:hidden;
-  transition:border-color .25s,box-shadow .25s;
-}
+.faq-item{background:var(--white);border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:border-color .25s,box-shadow .25s;}
 .faq-item:hover,.faq-item.open{border-color:rgba(30,136,229,.35);box-shadow:0 4px 20px rgba(21,101,192,.08);}
-.faq-q{
-  width:100%;background:none;border:none;text-align:left;cursor:pointer;
-  display:flex;align-items:center;justify-content:space-between;
-  padding:1.35rem 1.6rem;
-  font-family:'DM Sans',sans-serif;font-size:clamp(.88rem,1.6vw,.96rem);
-  font-weight:600;color:var(--ink);gap:1.5rem;transition:color .2s;
-}
+.faq-q{width:100%;background:none;border:none;text-align:left;cursor:pointer;display:flex;align-items:center;justify-content:space-between;padding:1.35rem 1.6rem;font-family:'DM Sans',sans-serif;font-size:clamp(.88rem,1.6vw,.96rem);font-weight:600;color:var(--ink);gap:1.5rem;transition:color .2s;}
 .faq-q:hover{color:var(--blue2);}
 .faq-item.open .faq-q{color:var(--blue);}
-.faq-icon{
-  flex-shrink:0;width:28px;height:28px;
-  border-radius:50%;
-  background:var(--cream2);
-  display:flex;align-items:center;justify-content:center;
-  transition:background .25s,transform .35s;
-}
+.faq-icon{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--cream2);display:flex;align-items:center;justify-content:center;transition:background .25s,transform .35s;}
 .faq-icon svg{width:11px;height:11px;fill:none;stroke:var(--mid);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;transition:stroke .25s;}
 .faq-item.open .faq-icon{background:var(--blue);transform:rotate(45deg);}
 .faq-item.open .faq-icon svg{stroke:#fff;}
-.faq-a{
-  max-height:0;overflow:hidden;
-  transition:max-height .42s ease,padding .3s;
-  font-size:.88rem;color:var(--mid);line-height:1.85;
-  padding:0 1.6rem;
-}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .42s ease,padding .3s;font-size:.88rem;color:var(--mid);line-height:1.85;padding:0 1.6rem;}
 .faq-item.open .faq-a{max-height:300px;padding:0 1.6rem 1.5rem;}
 
-/* ════════════════════════════════
-   CONTACT — REDESIGNED
-   ════════════════════════════════ */
+/* ── CONTACT ── */
 .contact-section{background:var(--ink);padding:110px 60px;position:relative;overflow:hidden;}
-.contact-section::before{
-  content:'';position:absolute;bottom:-100px;left:-100px;
-  width:500px;height:500px;border-radius:50%;
-  background:radial-gradient(circle,rgba(30,136,229,.12) 0%,transparent 70%);
-  pointer-events:none;
-}
+.contact-section::before{content:'';position:absolute;bottom:-100px;left:-100px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(30,136,229,.12) 0%,transparent 70%);pointer-events:none;}
 .contact-grid{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1.1fr;gap:6rem;align-items:start;position:relative;z-index:1;}
 .contact-left .sec-tag{color:var(--blue3);}
 .contact-left .sec-tag::before{background:var(--blue3);}
@@ -447,13 +299,7 @@ nav.scrolled{box-shadow:0 2px 24px rgba(21,101,192,.08);}
 .contact-left .sec-rule{background:var(--blue3);}
 .contact-left .sec-p{color:rgba(255,255,255,.5);max-width:400px;}
 .cinfo-list{display:flex;flex-direction:column;gap:1rem;margin-top:2.5rem;}
-.cinfo-row{
-  display:flex;align-items:center;gap:1.2rem;
-  padding:1.2rem 1.4rem;
-  border:1px solid rgba(255,255,255,.07);
-  background:rgba(255,255,255,.03);
-  transition:border-color .25s,background .25s;
-}
+.cinfo-row{display:flex;align-items:center;gap:1.2rem;padding:1.2rem 1.4rem;border:1px solid rgba(255,255,255,.07);background:rgba(255,255,255,.03);transition:border-color .25s,background .25s;}
 .cinfo-row:hover{border-color:rgba(30,136,229,.4);background:rgba(30,136,229,.07);}
 .cinfo-ico{width:42px;height:42px;flex-shrink:0;background:var(--blue);border-radius:10px;display:flex;align-items:center;justify-content:center;}
 .cinfo-ico svg{width:17px;height:17px;fill:none;stroke:var(--accent2);stroke-width:1.8;stroke-linecap:round;}
@@ -461,51 +307,19 @@ nav.scrolled{box-shadow:0 2px 24px rgba(21,101,192,.08);}
 .cinfo-val{font-size:.88rem;color:rgba(255,255,255,.8);line-height:1.5;}
 .cinfo-val a{color:rgba(255,255,255,.8);transition:color .2s;}
 .cinfo-val a:hover{color:var(--blue3);}
-
-/* Form card */
-.form-card{
-  background:var(--white);
-  border-radius:20px;
-  padding:3rem 2.8rem;
-  box-shadow:0 24px 80px rgba(0,0,0,.3);
-}
+.form-card{background:var(--white);border-radius:20px;padding:3rem 2.8rem;box-shadow:0 24px 80px rgba(0,0,0,.3);}
 .form-title{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:var(--ink);margin-bottom:.3rem;line-height:1.1;}
 .form-sub{font-size:.82rem;color:var(--muted);margin-bottom:2rem;line-height:1.6;}
 .fg{margin-bottom:1.2rem;}
-.fg label{
-  display:block;font-size:.6rem;font-weight:700;
-  letter-spacing:.18em;text-transform:uppercase;
-  color:var(--mid);margin-bottom:.5rem;
-}
-.fg input,.fg select,.fg textarea{
-  width:100%;
-  background:var(--cream);
-  border:1.5px solid transparent;
-  border-radius:8px;
-  padding:.9rem 1.1rem;
-  font-family:'DM Sans',sans-serif;font-size:.88rem;color:var(--ink);
-  outline:none;
-  transition:border-color .2s,background .2s,box-shadow .2s;
-  -webkit-appearance:none;
-}
-.fg input:focus,.fg select:focus,.fg textarea:focus{
-  border-color:var(--blue2);
-  background:var(--white);
-  box-shadow:0 0 0 4px rgba(30,136,229,.1);
-}
+.fg label{display:block;font-size:.6rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--mid);margin-bottom:.5rem;}
+.fg input,.fg select,.fg textarea{width:100%;background:var(--cream);border:1.5px solid transparent;border-radius:8px;padding:.9rem 1.1rem;font-family:'DM Sans',sans-serif;font-size:.88rem;color:var(--ink);outline:none;transition:border-color .2s,background .2s,box-shadow .2s;-webkit-appearance:none;}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--blue2);background:var(--white);box-shadow:0 0 0 4px rgba(30,136,229,.1);}
 .fg input::placeholder,.fg textarea::placeholder{color:var(--muted);}
 .fg textarea{resize:vertical;min-height:100px;}
 .fg select{cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%233a5a80' stroke-width='2' stroke-linecap='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center;padding-right:2.5rem;}
 .form-row2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
 .form-divider{height:1px;background:var(--border);margin:1.4rem 0;}
-.wa-btn{
-  width:100%;background:#25D366;color:var(--white);
-  padding:1.05rem;font-family:'DM Sans',sans-serif;
-  font-weight:700;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;
-  border:none;border-radius:8px;cursor:pointer;
-  display:flex;align-items:center;justify-content:center;gap:.7rem;
-  transition:background .2s,transform .15s;
-}
+.wa-btn{width:100%;background:#25D366;color:var(--white);padding:1.05rem;font-family:'DM Sans',sans-serif;font-weight:700;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;border:none;border-radius:8px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.7rem;transition:background .2s,transform .15s;}
 .wa-btn:hover{background:#1da851;transform:translateY(-1px);}
 .wa-btn:active{transform:none;}
 .wa-btn svg{width:18px;height:18px;fill:var(--white);}
@@ -567,14 +381,6 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:
 .detail-view-cond{width:100%;background:var(--white);border:1.5px solid var(--border2);border-radius:8px;padding:.75rem;font-family:'DM Sans',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.5rem;transition:border-color .2s;}
 .detail-view-cond:hover{border-color:var(--blue);}
 .detail-view-cond svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;}
-@media(min-width:768px){
-  .detail-inner{padding:28px 40px 80px;}
-  .detail-hero-img{aspect-ratio:16/8;}
-  .detail-car-title{font-size:1.6rem;}
-  .detail-actions{display:grid;grid-template-columns:1fr 1fr;gap:.55rem;}
-  .detail-btn-reserve{grid-column:1/-1;}
-  .detail-btn-row{display:contents;}
-}
 
 /* ── RESPONSIVE ── */
 @media(max-width:1024px){
@@ -623,6 +429,14 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:
   .contact-grid{gap:2.5rem;}
   .stats-section,.process-section,.testi-section{padding:56px 16px;}
 }
+@media(min-width:768px){
+  .detail-inner{padding:28px 40px 80px;}
+  .detail-hero-img{aspect-ratio:16/8;}
+  .detail-car-title{font-size:1.6rem;}
+  .detail-actions{display:grid;grid-template-columns:1fr 1fr;gap:.55rem;}
+  .detail-btn-reserve{grid-column:1/-1;}
+  .detail-btn-row{display:contents;}
+}
 </style>
 </head>
 <body>
@@ -634,8 +448,8 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:
       <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
     </div>
     <div class="logo-text">
-      <div class="l1">Boss Calaz</div>
-      <div class="l2">Zvishavane, Zimbabwe</div>
+      <div class="l1">Riley Motors</div>
+      <div class="l2">Zimbabwe</div>
     </div>
   </div>
   <ul class="nav-links">
@@ -663,8 +477,8 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:
 <!-- HERO -->
 <section class="hero">
   <div class="hero-bg" id="heroBg">
-    <img src="carz.avif" alt="Quality Stock" id="heroImg0">
-    <img src="lineup.webp" alt="Car Lineup" id="heroImg1" style="display:none">
+    <img src="carz.avif" alt="Riley Motors" id="heroImg0">
+    <img src="lineup.webp" alt="Premium Fleet" id="heroImg1" style="display:none">
   </div>
   <div class="hero-text">
     <div class="hero-badge">
@@ -672,11 +486,11 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:
         <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
       </div>
       <div class="hero-badge-text">
-        <div class="hb1">Boss Calaz</div>
-        <div class="hb2">Zvishavane · Open 24hrs</div>
+        <div class="hb1">Riley Motors</div>
+        <div class="hb2">Zimbabwe · Vehicle Service</div>
       </div>
     </div>
-    <div class="hero-model" id="heroModel">Boss Calaz Zvishavane</div>
+    <div class="hero-model" id="heroModel">Riley Motors Zimbabwe</div>
     <div class="hero-btns">
       <button class="hbtn hbtn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Enquire Now</button>
       <button class="hbtn hbtn-secondary" onclick="document.getElementById('inventory').scrollIntoView({behavior:'smooth'})">View Inventory</button>
@@ -690,19 +504,19 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:
   <div class="why-inner">
     <div class="why-item reveal delay-1">
       <div class="why-num">01</div>
-      <div><div class="why-t">Nationwide Supply</div><div class="why-s">We deliver any car to your location</div></div>
+      <div><div class="why-t">Quality Stock</div><div class="why-s">Verified, inspected vehicles every time</div></div>
     </div>
     <div class="why-item reveal delay-2">
       <div class="why-num">02</div>
-      <div><div class="why-t">Be Forward Service</div><div class="why-s">Direct imports &amp; Be Forward sourcing</div></div>
+      <div><div class="why-t">Vehicle Service</div><div class="why-s">Professional servicing &amp; maintenance</div></div>
     </div>
     <div class="why-item reveal delay-3">
       <div class="why-num">03</div>
-      <div><div class="why-t">Open 24 Hours</div><div class="why-s">Always available for your enquiry</div></div>
+      <div><div class="why-t">Competitive Prices</div><div class="why-s">Fair market value on all our vehicles</div></div>
     </div>
     <div class="why-item reveal delay-4">
       <div class="why-num">04</div>
-      <div><div class="why-t">Swaps &amp; Tops</div><div class="why-s">We do swaps and top-ups on any deal</div></div>
+      <div><div class="why-t">Trusted Dealer</div><div class="why-s">Hundreds of happy customers across Zimbabwe</div></div>
     </div>
   </div>
 </div>
@@ -713,113 +527,112 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:
     <div class="sec-tag reveal">Our Collection</div>
     <h2 class="sec-h2 reveal">Premium <em>Vehicles</em></h2>
     <div class="sec-rule reveal"></div>
-    <p class="sec-p reveal" style="margin-bottom:2.5rem">Quality cars sourced nationwide and available now. We buy, sell and import motor vehicles across Zimbabwe.</p>
+    <p class="sec-p reveal" style="margin-bottom:2.5rem">Quality cars, inspected and ready. Riley Motors offers a handpicked selection of premium vehicles at competitive prices across Zimbabwe.</p>
     <div class="filter-row reveal">
       <button class="pill active" onclick="filterCars('all',this)">All</button>
-      <button class="pill" onclick="filterCars('pickup',this)">Pickups</button>
-      <button class="pill" onclick="filterCars('suv',this)">SUVs</button>
       <button class="pill" onclick="filterCars('sedan',this)">Sedans</button>
-      <button class="pill" onclick="filterCars('van',this)">Vans</button>
+      <button class="pill" onclick="filterCars('suv',this)">SUVs</button>
+      <button class="pill" onclick="filterCars('hybrid',this)">Hybrids</button>
     </div>
     <div class="cars-grid" id="carsGrid">
-      <div class="car-card reveal delay-1" data-cat="pickup" onclick="openDetail(0)">
+      <div class="car-card reveal delay-1" data-cat="sedan" onclick="openDetail(0)">
         <div class="car-img">
-          <img src="toyota hilux gd6.jpeg" alt="Toyota Hillux GD6" loading="lazy">
-          <div class="car-badge-el new">New Arrival</div>
-          <button class="fav-btn" onclick="toggleFav(event,this)" aria-label="Favourite"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
-        </div>
-        <div class="car-body">
-          <div class="car-name"><strong>Toyota</strong> Hillux GD6 Auto</div>
-          <div class="car-specs"><span class="spec">Low km</span><span class="spec">A Rated</span><span class="spec"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Zvishavane</span></div>
-          <div class="car-footer"><div class="car-price"><sup>$</sup>45,000</div><div class="car-finance">Call <span>+263 78 544 3085</span> for details</div><div class="car-certified">Certified</div></div>
-        </div>
-      </div>
-      <div class="car-card reveal delay-2" data-cat="suv" onclick="openDetail(1)">
-        <div class="car-img">
-          <img src="toyota fortuner gd6.jpeg" alt="Toyota Fortuner GD6" loading="lazy">
+          <img src="benz c350.jpeg" alt="Mercedes Benz C350e Hybrid" loading="lazy">
           <div class="car-badge-el sale">Special Price</div>
           <button class="fav-btn" onclick="toggleFav(event,this)" aria-label="Favourite"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
         </div>
         <div class="car-body">
-          <div class="car-name"><strong>Toyota</strong> Fortuner GD6</div>
-          <div class="car-specs"><span class="spec">Low km</span><span class="spec">A Rated</span><span class="spec"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Zvishavane</span></div>
-          <div class="car-footer"><div class="car-price"><sup>$</sup>39,000</div><div class="car-price-original">$47,000</div><div class="car-finance">Call <span>+263 78 544 3085</span></div><div class="car-certified">Certified</div></div>
+          <div class="car-name"><strong>Mercedes Benz</strong> C350e Hybrid</div>
+          <div class="car-specs"><span class="spec">2017</span><span class="spec">Hybrid</span><span class="spec"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Zimbabwe</span></div>
+          <div class="car-footer"><div class="car-price"><sup>$</sup>25,000</div><div class="car-finance">Call <span>+263 77 658 0919</span> for details</div><div class="car-certified">Verified</div></div>
         </div>
       </div>
-      <div class="car-card reveal delay-3" data-cat="pickup" onclick="openDetail(2)">
+      <div class="car-card reveal delay-2" data-cat="hybrid" onclick="openDetail(1)">
         <div class="car-img">
-          <img src="ford ranger.jpeg" alt="Ford Ranger Wildtrak" loading="lazy">
-          <div class="car-badge-el import">Import</div>
+          <img src="toyota.jpeg" alt="Toyota C-HR Hybrid" loading="lazy">
+          <div class="car-badge-el new">New Arrival</div>
           <button class="fav-btn" onclick="toggleFav(event,this)" aria-label="Favourite"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
         </div>
         <div class="car-body">
-          <div class="car-name"><strong>Ford</strong> Ranger Wildtrak Petrol</div>
-          <div class="car-specs"><span class="spec">Low km</span><span class="spec">A Rated</span><span class="spec"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Zvishavane</span></div>
-          <div class="car-footer"><div class="car-price"><sup>$</sup>59,000</div><div class="car-finance">Call <span>+263 78 544 3085</span></div><div class="car-certified">Certified</div></div>
+          <div class="car-name"><strong>Toyota</strong> C-HR Hybrid G</div>
+          <div class="car-specs"><span class="spec">Low km</span><span class="spec">Hybrid</span><span class="spec"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Zimbabwe</span></div>
+          <div class="car-footer"><div class="car-price"><sup>$</sup>22,500</div><div class="car-finance">Call <span>+263 77 658 0919</span></div><div class="car-certified">Verified</div></div>
+        </div>
+      </div>
+      <div class="car-card reveal delay-3" data-cat="suv" onclick="openDetail(2)">
+        <div class="car-img">
+          <img src="chev.jpeg" alt="Chevrolet Trailblazer" loading="lazy">
+          <div class="car-badge-el import">Reconditioned</div>
+          <button class="fav-btn" onclick="toggleFav(event,this)" aria-label="Favourite"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+        </div>
+        <div class="car-body">
+          <div class="car-name"><strong>Chevrolet</strong> Trailblazer 2.8D</div>
+          <div class="car-specs"><span class="spec">Diesel</span><span class="spec">Reconditioned</span><span class="spec"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Zimbabwe</span></div>
+          <div class="car-footer"><div class="car-price"><sup>$</sup>25,000</div><div class="car-finance">Call <span>+263 77 658 0919</span></div><div class="car-certified">Verified</div></div>
         </div>
       </div>
       <div class="car-card reveal delay-1" data-cat="sedan" onclick="openDetail(3)">
         <div class="car-img">
-          <img src="benz c25.jpeg" alt="Mercedes Benz C250" loading="lazy">
+          <img src="benz c200.jpeg" alt="Mercedes Benz C200 W205" loading="lazy">
           <div class="car-badge-el sale">Special Price</div>
           <button class="fav-btn" onclick="toggleFav(event,this)" aria-label="Favourite"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
         </div>
         <div class="car-body">
-          <div class="car-name"><strong>Mercedes Benz</strong> C250</div>
-          <div class="car-specs"><span class="spec">Low km</span><span class="spec">A Rated</span><span class="spec"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Zvishavane</span></div>
-          <div class="car-footer"><div class="car-price"><sup>$</sup>27,500</div><div class="car-finance">Call <span>+263 78 544 3085</span></div><div class="car-certified">Certified</div></div>
+          <div class="car-name"><strong>Mercedes Benz</strong> C200 W205</div>
+          <div class="car-specs"><span class="spec">2020</span><span class="spec">Low km</span><span class="spec"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Zimbabwe</span></div>
+          <div class="car-footer"><div class="car-price"><sup>$</sup>20,500</div><div class="car-finance">Call <span>+263 77 658 0919</span></div><div class="car-certified">Verified</div></div>
         </div>
       </div>
-      <div class="car-card reveal delay-2" data-cat="suv" onclick="openDetail(4)">
+      <div class="car-card reveal delay-2" data-cat="hybrid" onclick="openDetail(4)">
         <div class="car-img">
-          <img src="honda vezzel.jpeg" alt="Honda Vezzel Hybrid" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85" alt="Toyota Vehicle" loading="lazy">
           <div class="car-badge-el new">Hybrid</div>
           <button class="fav-btn" onclick="toggleFav(event,this)" aria-label="Favourite"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
         </div>
         <div class="car-body">
-          <div class="car-name"><strong>Honda</strong> Vezzel Hybrid</div>
-          <div class="car-specs"><span class="spec">Low km</span><span class="spec">Hybrid</span><span class="spec"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Zvishavane</span></div>
-          <div class="car-footer"><div class="car-price"><sup>$</sup>14,800</div><div class="car-finance">Call <span>+263 78 544 3085</span></div><div class="car-certified">Certified</div></div>
+          <div class="car-name"><strong>Toyota</strong> Aqua Hybrid</div>
+          <div class="car-specs"><span class="spec">Low km</span><span class="spec">Hybrid</span><span class="spec"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Zimbabwe</span></div>
+          <div class="car-footer"><div class="car-price"><sup>$</sup>13,500</div><div class="car-finance">Call <span>+263 77 658 0919</span></div><div class="car-certified">Verified</div></div>
         </div>
       </div>
-      <div class="car-card reveal delay-3" data-cat="van" onclick="openDetail(5)">
+      <div class="car-card reveal delay-3" data-cat="suv" onclick="openDetail(5)">
         <div class="car-img">
-          <img src="toyota hiace.jpeg" alt="Toyota Hiace" loading="lazy">
-          <div class="car-badge-el new">New Arrival</div>
+          <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=85" alt="Toyota Land Cruiser Prado" loading="lazy">
+          <div class="car-badge-el import">Premium</div>
           <button class="fav-btn" onclick="toggleFav(event,this)" aria-label="Favourite"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
         </div>
         <div class="car-body">
-          <div class="car-name"><strong>Toyota</strong> Hiace Super GL 1KD Auto</div>
-          <div class="car-specs"><span class="spec">Low km</span><span class="spec">A Rated</span><span class="spec"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Zvishavane</span></div>
-          <div class="car-footer"><div class="car-price"><sup>$</sup>16,500</div><div class="car-finance">Call <span>+263 78 544 3085</span></div><div class="car-certified">Certified</div></div>
+          <div class="car-name"><strong>Toyota</strong> Land Cruiser Prado TX</div>
+          <div class="car-specs"><span class="spec">Low km</span><span class="spec">Diesel</span><span class="spec"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Zimbabwe</span></div>
+          <div class="car-footer"><div class="car-price"><sup>$</sup>32,000</div><div class="car-finance">Call <span>+263 77 658 0919</span></div><div class="car-certified">Verified</div></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ NEW SECTION 1: STATS BANNER ══ -->
+<!-- STATS BANNER -->
 <section class="stats-section">
   <div class="stats-inner">
     <div class="stat-item reveal delay-1">
-      <span class="stat-num">500<span>+</span></span>
+      <span class="stat-num">300<span>+</span></span>
       <span class="stat-label">Cars Sold</span>
       <div class="stat-desc">Happy customers across Zimbabwe</div>
     </div>
     <div class="stat-item reveal delay-2">
-      <span class="stat-num">24<span>/7</span></span>
-      <span class="stat-label">Always Open</span>
-      <div class="stat-desc">Call or WhatsApp any time of day</div>
-    </div>
-    <div class="stat-item reveal delay-3">
       <span class="stat-num">10<span>+</span></span>
       <span class="stat-label">Brands Stocked</span>
-      <div class="stat-desc">Toyota, Ford, Mercedes, Honda &amp; more</div>
+      <div class="stat-desc">Mercedes, Toyota, Chevy &amp; more</div>
+    </div>
+    <div class="stat-item reveal delay-3">
+      <span class="stat-num">5<span>★</span></span>
+      <span class="stat-label">Customer Rated</span>
+      <div class="stat-desc">Top-rated dealer in Zimbabwe</div>
     </div>
     <div class="stat-item reveal delay-4">
       <span class="stat-num">1<span>st</span></span>
-      <span class="stat-label">In Zvishavane</span>
-      <div class="stat-desc">The region's most trusted car dealer</div>
+      <span class="stat-label">In Class</span>
+      <div class="stat-desc">Zimbabwe's trusted vehicle service</div>
     </div>
   </div>
 </section>
@@ -829,35 +642,35 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:
   <div class="featured-grid">
     <div class="feat-img-block reveal-left">
       <div class="feat-main-img">
-        <img src="toyota hilux legend.jpeg" alt="Toyota Hillux Legend Featured" loading="lazy">
+        <img src="benz c350.jpeg" alt="Featured Mercedes Benz C350e" loading="lazy">
       </div>
       <div class="feat-thumb-row">
-        <div class="feat-thumb"><img src="toyota hilux legend2.jpeg" alt="Side View" loading="lazy"></div>
-        <div class="feat-thumb"><img src="toyota hilux legend3.jpeg" alt="Interior" loading="lazy"></div>
+        <div class="feat-thumb"><img src="benzback.jpeg" alt="Side View" loading="lazy"></div>
+        <div class="feat-thumb"><img src="benzin.jpeg" alt="Interior" loading="lazy"></div>
       </div>
     </div>
     <div class="reveal-right">
       <div class="feat-tag">Featured Vehicle</div>
-      <div class="feat-name">Toyota Hillux Legend 2.8 Auto</div>
-      <p style="font-size:.88rem;color:var(--mid);line-height:1.9">One of the most capable and sought-after double cabs in Zimbabwe. Fully loaded, low mileage, and in excellent condition. Be Forward sourced and fully cleared.</p>
-      <div class="feat-price">$70,000 <span>negotiable</span></div>
+      <div class="feat-name">Mercedes Benz C350e Hybrid 2017</div>
+      <p style="font-size:.88rem;color:var(--mid);line-height:1.9">One of the most desirable luxury hybrids on the Zimbabwean market. Pristine condition, low mileage, full service history. Performance and economy in one stunning package.</p>
+      <div class="feat-price">$25,000 <span>negotiable</span></div>
       <ul class="feat-list">
-        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>2.8L Turbodiesel</li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>2.0L Plug-in Hybrid</li>
         <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Automatic Transmission</li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>2017 Model Year</li>
         <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Low Mileage</li>
-        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>4WD Capable</li>
         <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Full Service History</li>
-        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Nationwide Delivery</li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Fully Inspected</li>
       </ul>
       <div class="feat-btns">
         <button class="btn-ink" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Enquire Now</button>
-        <button class="btn-line" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Test Drive</button>
+        <button class="btn-line" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book a Viewing</button>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ NEW SECTION 2: HOW IT WORKS ══ -->
+<!-- HOW IT WORKS -->
 <section class="process-section">
   <div class="process-inner">
     <div class="process-header">
@@ -866,7 +679,7 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:
         <h2 class="sec-h2">How It <em>Works</em></h2>
         <div class="sec-rule"></div>
       </div>
-      <p class="sec-p reveal-right">From first enquiry to driving away — we make buying or selling your car as easy as a single WhatsApp message.</p>
+      <p class="sec-p reveal-right">From first enquiry to driving away — buying your next car through Riley Motors is simple, transparent and stress-free.</p>
     </div>
     <div class="process-steps">
       <div class="process-step reveal delay-1">
@@ -875,7 +688,7 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:
           <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
         </div>
         <div class="step-title">Contact Us</div>
-        <div class="step-text">WhatsApp or call us on +263 78 544 3085. Tell us what you're looking for — we'll help you right away.</div>
+        <div class="step-text">WhatsApp or call us on +263 77 658 0919. Tell us what you need — we respond fast and are always available.</div>
       </div>
       <div class="process-step reveal delay-2">
         <div class="step-circle">
@@ -883,7 +696,7 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:
           <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         </div>
         <div class="step-title">Browse &amp; Select</div>
-        <div class="step-text">View our full catalogue. Request any car — if it's not listed, we'll source it locally or import it through Be Forward.</div>
+        <div class="step-text">View our full catalogue of verified vehicles. Can't find what you want? We'll source it for you at the right price.</div>
       </div>
       <div class="process-step reveal delay-3">
         <div class="step-circle">
@@ -891,7 +704,7 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:
           <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
         </div>
         <div class="step-title">Reserve &amp; Pay</div>
-        <div class="step-text">Secure your vehicle with a deposit. We accept cash, EcoCash, and bank transfers. Swaps and trade-ins welcome.</div>
+        <div class="step-text">Secure your vehicle with a deposit. We accept USD cash, EcoCash, and bank transfers. Trade-ins are welcome.</div>
       </div>
       <div class="process-step reveal delay-4">
         <div class="step-circle">
@@ -899,56 +712,56 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:
           <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </div>
         <div class="step-title">Drive Away</div>
-        <div class="step-text">Pick up in Zvishavane or have your car delivered anywhere in Zimbabwe. Safe, on time, every time.</div>
+        <div class="step-text">Pick up your vehicle or arrange delivery anywhere in Zimbabwe. Every deal is fully receipted and documented.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ NEW SECTION 3: SERVICES ══ -->
+<!-- SERVICES -->
 <section class="services-section" id="services">
   <div class="services-inner">
     <div class="services-header reveal">
       <div class="sec-tag" style="justify-content:center">What We Do</div>
       <h2 class="sec-h2">Our <em>Services</em></h2>
       <div class="sec-rule" style="margin:1rem auto 1.2rem"></div>
-      <p class="sec-p" style="margin:0 auto;text-align:center;max-width:520px">From buying your first car to importing your dream vehicle — Boss Calaz handles everything, so you don't have to.</p>
+      <p class="sec-p" style="margin:0 auto;text-align:center;max-width:520px">From buying your first car to servicing your fleet — Riley Motors handles everything so you don't have to.</p>
     </div>
     <div class="services-grid">
       <div class="service-card reveal delay-1">
         <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
         <div class="service-title">Buy &amp; Sell</div>
-        <div class="service-text">Looking to buy or sell a car? We offer competitive prices, same-day valuations, and a fast, transparent sales process with full receipting.</div>
+        <div class="service-text">Looking to buy or sell a car? We offer competitive prices, same-day valuations, and a fast transparent process with full receipting on every deal.</div>
         <div class="service-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get a Quote <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
       </div>
       <div class="service-card reveal delay-2">
-        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
-        <div class="service-title">Be Forward Imports</div>
-        <div class="service-text">We handle the complete Be Forward import process — selection in Japan, payment, shipping, customs clearance, and delivery to your door in Zimbabwe.</div>
-        <div class="service-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Start Import <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <div class="service-title">Vehicle Servicing</div>
+        <div class="service-text">Full mechanical and electrical servicing for your vehicle. Our experienced technicians keep your car in peak condition with genuine parts and professional care.</div>
+        <div class="service-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book Service <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
       </div>
       <div class="service-card reveal delay-3">
         <div class="service-icon"><svg viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div>
-        <div class="service-title">Swaps &amp; Tops</div>
-        <div class="service-text">Upgrade your vehicle without the hassle. Bring your current car, we give it an honest valuation, and you top up the difference on the car you want.</div>
+        <div class="service-title">Swaps &amp; Trade-Ins</div>
+        <div class="service-text">Upgrade your vehicle without hassle. Bring your current car, we give an honest valuation, and you top up the difference to drive away in the car you want.</div>
         <div class="service-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Enquire <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
       </div>
       <div class="service-card reveal delay-1">
         <div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
-        <div class="service-title">24/7 Availability</div>
-        <div class="service-text">We never close. Whether it's 2am or a Sunday afternoon, call or WhatsApp us and we will respond. Your convenience is our priority.</div>
-        <div class="service-cta" onclick="window.open('https://wa.me/263785443085','_blank')">WhatsApp Now <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+        <div class="service-title">Always Available</div>
+        <div class="service-text">Call or WhatsApp us any time. Whether it's a quick question or a serious deal — Riley Motors is always ready to assist you, every day of the week.</div>
+        <div class="service-cta" onclick="window.open('https://wa.me/263776580919','_blank')">WhatsApp Now <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
       </div>
       <div class="service-card reveal delay-2">
         <div class="service-icon"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
-        <div class="service-title">Nationwide Delivery</div>
-        <div class="service-text">Buy your car from Zvishavane and we deliver it to Harare, Bulawayo, Mutare — anywhere in Zimbabwe, safely and on schedule.</div>
-        <div class="service-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Arrange Delivery <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+        <div class="service-title">Vehicle Sourcing</div>
+        <div class="service-text">Don't see the car you want in our stock? Tell us your spec and budget and we'll source it for you — locally or through our import partners.</div>
+        <div class="service-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Request a Car <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
       </div>
       <div class="service-card reveal delay-3">
         <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
         <div class="service-title">Verified &amp; Inspected</div>
-        <div class="service-text">Every vehicle we stock is checked before listing. You receive a full condition report — no surprises, no hidden issues. Just honest cars at fair prices.</div>
+        <div class="service-text">Every vehicle Riley Motors sells is checked before listing. You get a full condition report — no hidden surprises, just honest cars at fair prices.</div>
         <div class="service-cta" onclick="document.getElementById('inventory').scrollIntoView({behavior:'smooth'})">View Stock <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
       </div>
     </div>
@@ -961,32 +774,32 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:
     <div class="about-layout">
       <div class="about-img-wrap reveal-left">
         <div class="about-img-main">
-          <img src="toyota hiace.jpeg" alt="About Boss Calaz" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?w=800&q=85" alt="About Riley Motors" loading="lazy">
         </div>
         <div class="about-num-card">
-          <div class="anc-n">24/7</div>
-          <div class="anc-l">Always Open</div>
+          <div class="anc-n">100%</div>
+          <div class="anc-l">Verified Stock</div>
         </div>
       </div>
       <div class="reveal-right">
         <div class="sec-tag">Our Story</div>
-        <h2 class="sec-h2">Zvishavane's <em>Trusted</em> Dealer</h2>
+        <h2 class="sec-h2">Zimbabwe's <em>Trusted</em> Car Dealer</h2>
         <div class="sec-rule"></div>
-        <p class="sec-p">Boss Calaz is Zimbabwe's trusted destination for quality vehicles. Based in Zvishavane CBD, we supply cars nationwide — buying, selling, importing, and delivering any vehicle of your choice, anywhere in Zimbabwe.</p>
+        <p class="sec-p">Riley Motors is a trusted vehicle sales and service business operating across Zimbabwe. We pride ourselves on offering quality, inspected vehicles at competitive prices — with honest, transparent service at every step of the process.</p>
         <div class="af-list">
-          <div class="af"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Nationwide supply &amp; delivery</div>
-          <div class="af"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Be Forward import services</div>
+          <div class="af"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Premium pre-owned vehicles</div>
+          <div class="af"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Professional vehicle servicing</div>
           <div class="af"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Swaps, tops &amp; trade-ins welcome</div>
-          <div class="af"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Open 24 hours — always available</div>
+          <div class="af"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Fully receipted, documented deals</div>
         </div>
         <div class="about-strip">
           <div class="act">
             <div class="act-ico"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.42 2 2 0 0 1 3.6 1.25h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16"/></svg></div>
-            <div><strong>+263 78 544 3085</strong><span>Open 24 hours, 7 days</span></div>
+            <div><strong>+263 77 658 0919</strong><span>WhatsApp or call, any time</span></div>
           </div>
           <div class="act">
-            <div class="act-ico"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-            <div><strong>Zvishavane CBD, Zimbabwe</strong><span>Visit us anytime — always open</span></div>
+            <div class="act-ico"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div><strong>Kaochatanyaradzwa@gmail.com</strong><span>Email us anytime</span></div>
           </div>
         </div>
       </div>
@@ -999,33 +812,33 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:
   <div class="our-company-title reveal">Our Company</div>
   <div class="company-cards-grid">
     <div class="company-card reveal delay-1">
-      <img class="company-card-img" src="honda vezzel.jpeg" alt="Quality" loading="lazy">
+      <img class="company-card-img" src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&q=85" alt="Quality" loading="lazy">
       <div class="company-card-body">
-        <div class="company-card-tag">Quality</div>
-        <p class="company-card-text">Every vehicle we supply is sourced and verified — because you deserve to drive with confidence, wherever you are in Zimbabwe.</p>
+        <div class="company-card-tag">Quality Vehicles</div>
+        <p class="company-card-text">Every vehicle we stock is inspected and verified — because you deserve to buy with confidence. No surprises, just honest cars.</p>
         <a href="#inventory" class="company-card-link">View Inventory</a>
       </div>
     </div>
     <div class="company-card reveal delay-2">
-      <img class="company-card-img" src="toyota hilux legend2.jpeg" alt="Be Forward" loading="lazy">
+      <img class="company-card-img" src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=800&q=85" alt="Service" loading="lazy">
       <div class="company-card-body">
-        <div class="company-card-tag">Be Forward Services</div>
-        <p class="company-card-text">We handle the full Be Forward import process for you — from selection in Japan to delivery at your door. Stress-free importing made easy.</p>
-        <a href="#contact" class="company-card-link">Learn More</a>
+        <div class="company-card-tag">Vehicle Service</div>
+        <p class="company-card-text">Professional vehicle servicing you can trust. Our team keeps your car running at its best with quality parts and expert care.</p>
+        <a href="#services" class="company-card-link">Our Services</a>
       </div>
     </div>
     <div class="company-card reveal delay-3">
-      <img class="company-card-img" src="toyota legend50.jpeg" alt="Deliver" loading="lazy">
+      <img class="company-card-img" src="https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?w=800&q=85" alt="Trusted" loading="lazy">
       <div class="company-card-body">
-        <div class="company-card-tag">Nationwide Delivery</div>
-        <p class="company-card-text">Wherever you are in Zimbabwe, we deliver. Buy from Zvishavane and have your car brought directly to you — safe and on time.</p>
+        <div class="company-card-tag">Trusted Nationwide</div>
+        <p class="company-card-text">Riley Motors has built a reputation across Zimbabwe for honest, transparent deals. Hundreds of satisfied customers across the country.</p>
         <a href="#contact" class="company-card-link">Get In Touch</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ NEW SECTION 4: TESTIMONIALS ══ -->
+<!-- TESTIMONIALS -->
 <section class="testi-section">
   <div class="testi-inner">
     <div class="testi-header reveal">
@@ -1042,7 +855,7 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:
           <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         </div>
         <div class="testi-quote-icon"><svg viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg></div>
-        <p class="testi-text">Boss Calaz made buying my Fortuner so easy. I WhatsApp'd them at night and had a deal by morning. The car was exactly as described — no surprises at all.</p>
+        <p class="testi-text">Riley Motors made buying my C350e so easy. The process was smooth, transparent, and the car was exactly as described. Highly recommend them.</p>
         <div class="testi-author">
           <div class="testi-avatar">T</div>
           <div><div class="testi-name">Tendai M.</div><div class="testi-loc">Harare, Zimbabwe</div></div>
@@ -1057,10 +870,10 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:
           <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         </div>
         <div class="testi-quote-icon"><svg viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg></div>
-        <p class="testi-text">They handled my Be Forward import from start to finish. I just sent them the link and they sorted everything — shipping, clearance, delivery to Bulawayo. Honestly impressive.</p>
+        <p class="testi-text">Got my Trailblazer serviced here and the team was professional and fast. Fair pricing and honest feedback on my vehicle's condition. Will definitely be back.</p>
         <div class="testi-author">
           <div class="testi-avatar">S</div>
-          <div><div class="testi-name">Sibongile N.</div><div class="testi-loc">Bulawayo, Zimbabwe</div></div>
+          <div><div class="testi-name">Sibo N.</div><div class="testi-loc">Bulawayo, Zimbabwe</div></div>
         </div>
       </div>
       <div class="testi-card reveal delay-3">
@@ -1072,17 +885,17 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:
           <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         </div>
         <div class="testi-quote-icon"><svg viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg></div>
-        <p class="testi-text">Did a swap with Boss Calaz for my Hillux GD6. Got a very fair trade-in value, they were honest throughout, and the whole deal was done in one day. Will use again.</p>
+        <p class="testi-text">Did a trade-in with Riley Motors — they gave a fair valuation on my old car and had me sorted within a day. Honest people, great deal. Couldn't be happier.</p>
         <div class="testi-author">
           <div class="testi-avatar">C</div>
-          <div><div class="testi-name">Chido R.</div><div class="testi-loc">Zvishavane, Zimbabwe</div></div>
+          <div><div class="testi-name">Chido R.</div><div class="testi-loc">Harare, Zimbabwe</div></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FAQ — REDESIGNED -->
+<!-- FAQ -->
 <section class="faq-section" id="faq">
   <div class="faq-inner">
     <div class="faq-header reveal">
@@ -1091,69 +904,65 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:
     </div>
     <div class="faq-grid">
       <div class="faq-item reveal delay-1">
-        <button class="faq-q" onclick="toggleFaq(this)">Do you deliver vehicles nationwide?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
-        <div class="faq-a">Yes. Boss Calaz delivers any vehicle to any location in Zimbabwe. Just tell us where you are and we'll arrange delivery at the best price.</div>
+        <button class="faq-q" onclick="toggleFaq(this)">What vehicles do you stock?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+        <div class="faq-a">We stock a range of quality pre-owned vehicles including Mercedes Benz, Toyota, Chevrolet, and more. Check our inventory for current listings or contact us for specific requests.</div>
       </div>
       <div class="faq-item reveal delay-2">
-        <button class="faq-q" onclick="toggleFaq(this)">Can I swap my current vehicle?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
-        <div class="faq-a">Absolutely. We do swaps and tops — bring your vehicle and we'll work out a deal that suits both parties. No swap is too big or too small.</div>
+        <button class="faq-q" onclick="toggleFaq(this)">Can I trade in my current vehicle?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+        <div class="faq-a">Absolutely. We accept trade-ins and do swaps with top-ups. Bring your vehicle, we'll give an honest same-day valuation and work out the best deal for you.</div>
       </div>
       <div class="faq-item reveal delay-3">
-        <button class="faq-q" onclick="toggleFaq(this)">What is the Be Forward service?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
-        <div class="faq-a">We source and import vehicles directly from Japan through Be Forward. We handle the entire process — selection, payment, shipping, and clearance — so you don't have to.</div>
+        <button class="faq-q" onclick="toggleFaq(this)">Do you offer vehicle servicing?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+        <div class="faq-a">Yes. Riley Motors offers professional vehicle servicing for your car. Our technicians are experienced and use quality parts to keep your vehicle in top condition.</div>
       </div>
       <div class="faq-item reveal delay-1">
         <button class="faq-q" onclick="toggleFaq(this)">Are your vehicles inspected before sale?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
-        <div class="faq-a">Yes. All vehicles are checked and vetted before listing. We pride ourselves on honest, transparent transactions so you know exactly what you are getting.</div>
+        <div class="faq-a">Yes. Every vehicle is checked and verified before listing. We provide a full condition report on request so you know exactly what you're buying — no hidden surprises.</div>
       </div>
       <div class="faq-item reveal delay-2">
-        <button class="faq-q" onclick="toggleFaq(this)">Can I reserve a vehicle before paying in full?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
-        <div class="faq-a">Yes. A deposit can hold any vehicle while you arrange the balance. Contact us to agree on reservation terms for the car you want.</div>
+        <button class="faq-q" onclick="toggleFaq(this)">Can I reserve a vehicle with a deposit?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+        <div class="faq-a">Yes. A deposit can hold any vehicle while you arrange the balance. Contact us to discuss reservation terms for the car you're interested in.</div>
       </div>
       <div class="faq-item reveal delay-3">
-        <button class="faq-q" onclick="toggleFaq(this)">What are your trading hours?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
-        <div class="faq-a">We are open 24 hours, 7 days a week. Call or WhatsApp +263 78 544 3085 any time.</div>
+        <button class="faq-q" onclick="toggleFaq(this)">What payment methods do you accept?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+        <div class="faq-a">We accept USD cash, bank transfers, EcoCash, and RTGS transfers. All transactions are fully receipted for your peace of mind.</div>
       </div>
       <div class="faq-item reveal delay-1">
         <button class="faq-q" onclick="toggleFaq(this)">Do you buy vehicles?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
-        <div class="faq-a">Yes. We buy cars for resale. If you want to sell your vehicle, contact us for a quick valuation and we'll make a fair offer the same day.</div>
+        <div class="faq-a">Yes. We buy cars for resale. Contact us with your vehicle details for a quick same-day valuation and a fair cash offer.</div>
       </div>
       <div class="faq-item reveal delay-2">
-        <button class="faq-q" onclick="toggleFaq(this)">What payment methods do you accept?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
-        <div class="faq-a">We accept USD cash, bank transfers, Ecocash, and RTGS/ZWL transfers. All transactions are fully receipted for your peace of mind.</div>
+        <button class="faq-q" onclick="toggleFaq(this)">Can I request a specific car not in stock?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+        <div class="faq-a">Definitely. We source vehicles on request. Tell us the make, model, year, and budget and we will find it for you at the right price.</div>
       </div>
       <div class="faq-item reveal delay-3">
-        <button class="faq-q" onclick="toggleFaq(this)">Can I request a specific car not listed?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
-        <div class="faq-a">Definitely. We source any vehicle on request — locally or through Be Forward imports. Just tell us what you want and we'll find it at the right price.</div>
-      </div>
-      <div class="faq-item reveal delay-1">
         <button class="faq-q" onclick="toggleFaq(this)">Are prices negotiable?<span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
-        <div class="faq-a">Our prices reflect the current market but we are always open to fair discussion. Call us and let's talk — we'll do our best to make a deal work for you.</div>
+        <div class="faq-a">Our prices reflect fair market value but we are always open to a reasonable discussion. Call us and we'll do our best to make a deal that works for you.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT — REDESIGNED -->
+<!-- CONTACT -->
 <section class="contact-section" id="contact">
   <div class="contact-grid">
     <div class="contact-left reveal-left">
       <div class="sec-tag">Get In Touch</div>
       <h2 class="sec-h2">Let's Find Your <em>Perfect Car</em></h2>
       <div class="sec-rule"></div>
-      <p class="sec-p">Whether you're ready to buy, sell, swap, or import — our team is available 24/7 to help you get the best deal.</p>
+      <p class="sec-p">Whether you're buying, selling, swapping, or need your car serviced — Riley Motors is ready to help you get the best deal.</p>
       <div class="cinfo-list">
         <div class="cinfo-row">
           <div class="cinfo-ico"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.42 2 2 0 0 1 3.6 1.25h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16"/></svg></div>
-          <div><div class="cinfo-lbl">WhatsApp / Phone</div><div class="cinfo-val"><a href="tel:+263785443085">+263 78 544 3085</a></div></div>
+          <div><div class="cinfo-lbl">WhatsApp / Phone</div><div class="cinfo-val"><a href="tel:+263776580919">+263 77 658 0919</a></div></div>
         </div>
         <div class="cinfo-row">
-          <div class="cinfo-ico"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-          <div><div class="cinfo-lbl">Location</div><div class="cinfo-val">Zvishavane CBD, Zimbabwe</div></div>
+          <div class="cinfo-ico"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div><div class="cinfo-lbl">Email</div><div class="cinfo-val"><a href="mailto:Kaochatanyaradzwa@gmail.com">Kaochatanyaradzwa@gmail.com</a></div></div>
         </div>
         <div class="cinfo-row">
           <div class="cinfo-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-          <div><div class="cinfo-lbl">Trading Hours</div><div class="cinfo-val">Open 24 Hours, 7 Days a Week</div></div>
+          <div><div class="cinfo-lbl">Business Hours</div><div class="cinfo-val">Monday – Saturday, 8am – 6pm</div></div>
         </div>
       </div>
     </div>
@@ -1178,15 +987,15 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:
         <div class="fg">
           <label>Vehicle of Interest</label>
           <select>
-            <option>Toyota Hillux GD6 Auto — $45,000</option>
-            <option>Toyota Fortuner GD6 — $39,000</option>
-            <option>Ford Ranger Wildtrak — $59,000</option>
-            <option>Mercedes Benz C250 — $27,500</option>
-            <option>Honda Vezzel Hybrid — $14,800</option>
-            <option>Toyota Hiace Super GL — $16,500</option>
-            <option>Toyota Hillux Legend 2.8 — $70,000</option>
-            <option>Be Forward Import Request</option>
-            <option>Swap / Top Enquiry</option>
+            <option>Mercedes Benz C350e Hybrid — $25,000</option>
+            <option>Toyota C-HR Hybrid G — $22,500</option>
+            <option>Chevrolet Trailblazer 2.8D — $25,000</option>
+            <option>Mercedes Benz C200 W205 — $20,500</option>
+            <option>Toyota Aqua Hybrid — $13,500</option>
+            <option>Toyota Land Cruiser Prado TX — $32,000</option>
+            <option>Vehicle Sourcing Request</option>
+            <option>Swap / Trade-In Enquiry</option>
+            <option>Vehicle Servicing</option>
             <option>General Enquiry / Sell My Car</option>
           </select>
         </div>
@@ -1199,7 +1008,7 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:
           <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
           Send via WhatsApp
         </button>
-        <div class="form-note">We typically respond within a few minutes · Open 24/7</div>
+        <div class="form-note">We typically respond within a few minutes</div>
       </div>
     </div>
   </div>
@@ -1212,43 +1021,43 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:
       <div class="nav-logo foot-logo">
         <div class="logo-circle"><svg viewBox="0 0 24 24" style="fill:none;stroke:#29b6f6;stroke-width:2;stroke-linecap:round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
         <div class="logo-text">
-          <div class="l1">Boss Calaz</div>
-          <div class="l2" style="color:rgba(255,255,255,.3)">Zvishavane, Zimbabwe</div>
+          <div class="l1">Riley Motors</div>
+          <div class="l2" style="color:rgba(255,255,255,.3)">Zimbabwe</div>
         </div>
       </div>
-      <p>Buying, selling and importing quality motor vehicles nationwide. Open 24 hours, always here for you.</p>
+      <p>Buying, selling and servicing quality motor vehicles across Zimbabwe. Honest deals, verified stock, every time.</p>
     </div>
     <div class="foot-col">
       <h4>Inventory</h4>
       <ul>
-        <li><a href="#inventory">All Cars</a></li>
-        <li><a href="#inventory">Pickups</a></li>
-        <li><a href="#inventory">SUVs</a></li>
+        <li><a href="#inventory">All Vehicles</a></li>
         <li><a href="#inventory">Sedans</a></li>
+        <li><a href="#inventory">SUVs</a></li>
+        <li><a href="#inventory">Hybrids</a></li>
       </ul>
     </div>
     <div class="foot-col">
       <h4>Services</h4>
       <ul>
         <li><a href="#services">Buy My Car</a></li>
-        <li><a href="#services">Swap &amp; Tops</a></li>
-        <li><a href="#services">Be Forward Import</a></li>
-        <li><a href="#services">Nationwide Delivery</a></li>
+        <li><a href="#services">Swap &amp; Trade-In</a></li>
+        <li><a href="#services">Vehicle Servicing</a></li>
+        <li><a href="#services">Car Sourcing</a></li>
       </ul>
     </div>
     <div class="foot-col">
       <h4>Contact</h4>
       <ul>
-        <li><span>+263 78 544 3085</span></li>
-        <li><span>Open 24 hours</span></li>
-        <li><span>Zvishavane CBD</span></li>
+        <li><span>+263 77 658 0919</span></li>
+        <li><span>Kaochatanyaradzwa@gmail.com</span></li>
+        <li><span>Mon–Sat, 8am – 6pm</span></li>
         <li><span>WhatsApp preferred</span></li>
       </ul>
     </div>
   </div>
   <div class="foot-bot">
-    <p>&copy; 2025 Boss Calaz. All rights reserved.</p>
-    <p>Premium Cars · Zvishavane, Zimbabwe</p>
+    <p>&copy; 2025 Riley Motors. All rights reserved.</p>
+    <p>Premium Cars · Zimbabwe</p>
   </div>
 </footer>
 
@@ -1259,35 +1068,33 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:
       <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
       Back to Inventory
     </button>
-    <div style="font-size:.7rem;color:var(--muted);font-weight:500">Boss Calaz</div>
+    <div style="font-size:.7rem;color:var(--muted);font-weight:500">Riley Motors</div>
   </div>
   <div class="detail-inner" id="detailContent"></div>
 </div>
 
 <script>
-/* ── Scroll reveal ── */
+/* Scroll reveal */
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if(e.isIntersecting){ e.target.classList.add('visible'); }
-  });
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
 },{threshold:0.12});
 document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el => observer.observe(el));
 
-/* ── Nav scroll ── */
+/* Nav scroll */
 window.addEventListener('scroll', () => {
   document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 20);
 });
 
-/* ── Hamburger ── */
+/* Hamburger */
 const ham = document.getElementById('hamburger');
 const mob = document.getElementById('mobMenu');
 ham.addEventListener('click', () => { ham.classList.toggle('open'); mob.classList.toggle('open'); });
 function closeMob(){ ham.classList.remove('open'); mob.classList.remove('open'); }
 
-/* ── Hero carousel ── */
+/* Hero carousel */
 const slides = [
-  { id:'heroImg0', title:'Boss Calaz Zvishavane.' },
-  { id:'heroImg1', title:'We Supply Cars Nationwide.' },
+  { id:'heroImg0', title:'Riley Motors Zimbabwe.' },
+  { id:'heroImg1', title:'Quality Vehicles, Honest Deals.' },
 ];
 let activeDot = 0;
 const dotsEl = document.getElementById('heroDots');
@@ -1306,34 +1113,34 @@ function goSlide(i){
 }
 setInterval(()=>goSlide((activeDot+1)%slides.length),6000);
 
-/* ── Filter ── */
+/* Filter */
 function filterCars(cat,btn){
   document.querySelectorAll('.pill').forEach(p=>p.classList.remove('active'));
   btn.classList.add('active');
   document.querySelectorAll('.car-card').forEach(c=>{ c.style.display=(cat==='all'||c.dataset.cat===cat)?'':'none'; });
 }
 
-/* ── Favourite ── */
+/* Favourite */
 function toggleFav(e,btn){ e.stopPropagation(); btn.classList.toggle('faved'); }
 
-/* ── WhatsApp ── */
+/* WhatsApp */
 function sendWhatsApp(){
   const name=document.querySelector('input[type="text"]').value||'Customer';
   const phone=document.querySelector('input[type="tel"]').value||'';
   const vehicle=document.querySelector('select').value;
   const msg=document.querySelector('textarea').value||'';
-  const text=encodeURIComponent(`Hi Boss Calaz!\n\nName: ${name}\nPhone: ${phone}\nVehicle: ${vehicle}\nMessage: ${msg}`);
-  window.open(`https://wa.me/263785443085?text=${text}`,'_blank');
+  const text=encodeURIComponent(`Hi Riley Motors!\n\nName: ${name}\nPhone: ${phone}\nVehicle: ${vehicle}\nMessage: ${msg}`);
+  window.open(`https://wa.me/263776580919?text=${text}`,'_blank');
 }
 
-/* ── Car data ── */
+/* Car data */
 const carData = [
-  {make:'Toyota',name:'Hillux GD6 Auto',price:'$45,000',year:'',km:'Low km',fuel:'Diesel',trans:'Automatic',drive:'4X4',finance:'Call for details',img:'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=960&q=85',desc:'Toyota Hillux GD6 Automatic in excellent condition. One of the most reliable double cabs in Zimbabwe.',location:'Zvishavane',warranty:'Available',service:'Complete',spare:'Yes'},
-  {make:'Toyota',name:'Fortuner GD6',price:'$39,000',year:'',km:'Low km',fuel:'Diesel',trans:'Automatic',drive:'4X4',finance:'Call for details',img:'https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?w=960&q=85',desc:'Toyota Fortuner GD6 in great condition. Spacious, reliable, and capable. A top family SUV.',location:'Zvishavane',warranty:'Available',service:'Complete',spare:'Yes'},
-  {make:'Ford',name:'Ranger Wildtrak Petrol',price:'$59,000',year:'',km:'Low km',fuel:'Petrol',trans:'Automatic',drive:'4X4',finance:'Call for details',img:'https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?w=960&q=85',desc:'Ford Ranger Wildtrak in outstanding condition. Petrol engine, fully loaded. A premium workhorse.',location:'Zvishavane',warranty:'Available',service:'Complete',spare:'Yes'},
-  {make:'Mercedes Benz',name:'C250',price:'$27,500',year:'',km:'Low km',fuel:'Petrol',trans:'Automatic',drive:'4X2',finance:'Call for details',img:'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=960&q=85',desc:'Mercedes Benz C250 in excellent condition. Luxury, comfort, and performance combined.',location:'Zvishavane',warranty:'Available',service:'Complete',spare:'Yes'},
-  {make:'Honda',name:'Vezzel Hybrid',price:'$14,800',year:'',km:'Low km',fuel:'Hybrid',trans:'CVT',drive:'4X2',finance:'Call for details',img:'https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=960&q=85',desc:'Honda Vezzel Hybrid — economical and reliable. Ideal daily driver with low running costs.',location:'Zvishavane',warranty:'Available',service:'Complete',spare:'Yes'},
-  {make:'Toyota',name:'Hiace Super GL 1KD Auto',price:'$16,500',year:'',km:'Low km',fuel:'Diesel',trans:'Automatic',drive:'4X2',finance:'Call for details',img:'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=960&q=85',desc:'Toyota Hiace Super GL 1KD Automatic. Spacious and versatile, great for family or business use.',location:'Zvishavane',warranty:'Available',service:'Complete',spare:'Yes'},
+  {make:'Mercedes Benz',name:'C350e Hybrid',price:'$25,000',year:'2017',km:'Low km',fuel:'Hybrid',trans:'Automatic',drive:'4X2',finance:'Call for details',img:'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=960&q=85',desc:'A premium 2017 Mercedes Benz C350e Plug-in Hybrid in excellent condition. Luxury, performance and economy all in one refined package.',location:'Zimbabwe',warranty:'Available',service:'Complete',spare:'Yes'},
+  {make:'Toyota',name:'C-HR Hybrid G',price:'$22,500',year:'',km:'Low km',fuel:'Hybrid',trans:'CVT',drive:'4X2',finance:'Call for details',img:'https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=960&q=85',desc:'Toyota C-HR Hybrid G in outstanding condition. Stylish, fuel-efficient and reliable — an ideal everyday vehicle.',location:'Zimbabwe',warranty:'Available',service:'Complete',spare:'Yes'},
+  {make:'Chevrolet',name:'Trailblazer 2.8D',price:'$25,000',year:'',km:'Low km',fuel:'Diesel',trans:'Automatic',drive:'4X4',finance:'Call for details',img:'https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?w=960&q=85',desc:'Chevrolet Trailblazer 2.8D reconditioned and in excellent condition. Capable, spacious, and ready for Zimbabwe\'s roads.',location:'Zimbabwe',warranty:'Available',service:'Complete',spare:'Yes'},
+  {make:'Mercedes Benz',name:'C200 W205',price:'$20,500',year:'2020',km:'Low km',fuel:'Petrol',trans:'Automatic',drive:'4X2',finance:'Call for details',img:'https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=960&q=85',desc:'A stunning 2020 Mercedes Benz C200 W205 in immaculate condition. Low mileage and full service history.',location:'Zimbabwe',warranty:'Available',service:'Complete',spare:'Yes'},
+  {make:'Toyota',name:'Aqua Hybrid',price:'$13,500',year:'',km:'Low km',fuel:'Hybrid',trans:'CVT',drive:'4X2',finance:'Call for details',img:'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=960&q=85',desc:'Toyota Aqua Hybrid — economical, reliable, and perfect for daily city driving. Very low running costs.',location:'Zimbabwe',warranty:'Available',service:'Complete',spare:'Yes'},
+  {make:'Toyota',name:'Land Cruiser Prado TX',price:'$32,000',year:'',km:'Low km',fuel:'Diesel',trans:'Automatic',drive:'4X4',finance:'Call for details',img:'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=960&q=85',desc:'Toyota Land Cruiser Prado TX in excellent condition. The definitive off-road and touring SUV — reliable on any terrain in Zimbabwe.',location:'Zimbabwe',warranty:'Available',service:'Complete',spare:'Yes'},
 ];
 
 function openDetail(i){
@@ -1348,18 +1155,16 @@ function openDetail(i){
     <div class="detail-vat-note">Prices Negotiable &nbsp;|&nbsp; Swaps &amp; Trade-Ins Welcome</div>
     <div class="detail-meta-row">
       <span class="detail-meta-pill"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>${c.location}</span>
-      <span class="detail-meta-pill"><span class="cert-dot"></span>Certified</span>
+      <span class="detail-meta-pill"><span class="cert-dot"></span>Verified</span>
       <span class="detail-meta-pill"><strong>A</strong>&nbsp;Rated</span>
     </div>
     <div class="detail-actions">
-      <button class="detail-btn-reserve" onclick="window.open('https://wa.me/263785443085?text=Hi%20Boss%20Calaz%2C%20I%20want%20to%20reserve%20the%20${encodeURIComponent(c.make+' '+c.name)}','_blank')">
+      <button class="detail-btn-reserve" onclick="window.open('https://wa.me/263776580919?text=Hi%20Riley%20Motors%2C%20I%20want%20to%20reserve%20the%20${encodeURIComponent(c.make+' '+c.name)}','_blank')">
         <svg class="detail-btn-icon" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Reserve This Vehicle
       </button>
       <div class="detail-btn-row">
-        <button class="detail-btn-secondary" onclick="window.open('https://wa.me/263785443085','_blank')"><svg class="detail-btn-icon" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>I'm Interested</button>
-        <button class="detail-btn-secondary" onclick="window.open('https://wa.me/263785443085?text=Hi%2C%20I%20want%20delivery%20for%20the%20${encodeURIComponent(c.make+' '+c.name)}','_blank')"><svg class="detail-btn-icon" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Get Delivery</button>
+        <button class="detail-btn-secondary" onclick="window.open('https://wa.me/263776580919','_blank')"><svg class="detail-btn-icon" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>I'm Interested</button>
         <button class="detail-btn-outline" onclick="closeDetail()"><svg class="detail-btn-icon" viewBox="0 0 24 24"><polyline points="8 17 3 12 8 7"/><line x1="3" y1="12" x2="21" y2="12"/></svg>Back</button>
-        <button class="detail-btn-outline" onclick="window.open('https://wa.me/263785443085','_blank')"><svg class="detail-btn-icon" viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>Set Alert</button>
       </div>
     </div>
     <div class="detail-card">
@@ -1375,7 +1180,6 @@ function openDetail(i){
     <div class="detail-card">
       <div class="detail-card-title">Vehicle Condition</div>
       <div class="detail-condition-badge"><div class="detail-cond-dot"></div><div class="detail-cond-text">This vehicle has been inspected and is in good condition with service history available on request.</div></div>
-      <button class="detail-view-cond"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>View Condition Report</button>
       <div class="detail-row" style="margin-top:.8rem"><span class="detail-row-label">Service History</span><span class="detail-row-value">${c.service}</span></div>
       <div class="detail-row"><span class="detail-row-label">Spare Key</span><span class="detail-row-value">${c.spare}</span></div>
       <div class="detail-row"><span class="detail-row-label">Warranty</span><span class="detail-row-value">${c.warranty}</span></div>
@@ -1389,7 +1193,7 @@ function openDetail(i){
 }
 function closeDetail(){ document.getElementById('carDetail').classList.remove('open'); document.body.style.overflow=''; }
 
-/* ── FAQ ── */
+/* FAQ */
 function toggleFaq(btn){
   const item=btn.closest('.faq-item');
   const isOpen=item.classList.contains('open');
